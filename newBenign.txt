@@ -1,0 +1,118 @@
+316	16	2252216	13/10/2011	FLORID DUCT HYPERPLASIA, COLUMNAR CELL CHANGE,				
+317	25	2803409	24/07/2012	 non-proliferative fibrocystic changes				
+318	37	392682	  05/01/2012	MACROPHAGES AND FAT NECROSIS				
+319	103	1210396	18/07/2011	phyllodes tumor				
+320	111	940393	11/10/2011	ductal papilloma				
+321	121	2519082	24/09/2012	benign breast tissue w adenosis				
+322	123	2120129	24/10/2011	benign breast tissue; columnar cell changes				
+323	133	1182501	08/11/2012	difuse stromal fibrosis				
+324	148	2655959	20/04/2011	focal proliferative fibrocystic changes; usual ductal hyperplasia; benign fibroglandular tissue showing focal lobular atrophy				
+325	166	1110967	28/03/2013	benign breast tissue				
+326	180	815820	11/01/2011	fibroadenoma				
+327	193	1076893	09/05/2012	FOCAL USUAL DUCTAL HYPERPLASIA				
+328	196	989065	04/01/2011	columnar cell changes				
+329	197	1159116	13/06/2011	lobular hyperplasia				
+330	220	925436	10/06/2011	radial scar				
+331	232	2187045	01/03/2011	proliferative fibrocystic changes				
+332	246	1259541	25/06/2013	benign breast tissue				
+333	252	2630801	07/08/2012	benign breast parenchyma; PASH				
+334	259	1256269	27/02/2013	benign breast tissue				
+335	293	1126876	21/06/2013	benign breast tissue				
+336	311	2226641	04/02/2011	fibroadenoma				
+337	409	1231608	10/05/2011	benign fibroglandular tissue				
+338	417	2519263	17/08/2011	non-proliferative fibrocystic changes				
+339	426	2590970	30/07/2012	benign breast tissue				
+340	462	2176223	06/03/2012		<Ductal (IDC)>			
+341	465	1231967	17/08/2012	ADH; proliferative fibrocystic changes w microcalcs				
+342	466	2184785	02/03/2004	benign breast parenchymaw mild proliferative fibrocystic changes				
+343	476	1149506	04/05/2012	benign breast tissue				
+344	507	2239386	25/11/2011	bening breast tissue; inflammaotry infiltrate in dermis				
+345	513	2025360	24/05/2012	FOCAL USUAL DUCTAL HYPERPLASIA				
+346	545	1122914	04/06/2012	calcs; fibrosis				
+347	547	2321543	15/06/2012	large duct papilloma				
+348	553	1266373	14/02/2011	non-proliferative fibrocystic changes				
+349	576	5660032	15/11/2011	breast tissue				
+350	580	2332052	07/11/2011	fibroadenomatoid change				
+351	606	2432207	20/12/2011	florid ductal hyperplasia and duct papilloma				
+352	664	2493382	28/05/2012	mild usual ductal hyperplasia				
+353	685	1172756	10/01/2011	proliferative fibrocystic changes wo atypia				
+354	689	2182960	28/01/2011	columnar cell changes; calcs				
+355	690	1103075	16/08/2012	benign breast tissue; focal columnar cell changes				
+356	707	1176531	20/01/2012	duct papilloma w usual hyperplasia				
+357	775	2654488	14/01/2011	fibroadenoma				
+358	793	2038612	21/03/2011	complex fibroepithelial lesion				
+359	821	2353429	28/03/2011	secretory changes w microcalcs				
+360	843	2037776	12/07/2011	non-proliferative fibrocystic changes				
+361	850	1099860	27/01/2011	fibrocystic changes				
+362	856	2570860	01/05/2012	ADH				
+363	875	1232628	18/06/2012	fragment of large duct papilloma wo atypia				
+364	885	1132763	19/05/2011	benign				
+365	887	2019219	14/06/2011	STROMAL FIBROSIS AN NON PROLIFERATIVE     FIBROCYSTIC CHANGES				
+366	895	5495375	04/03/2011	diabetic mastopathy				
+367	896	2431707	20/03/2012	fibroadenoma				
+368	900	2227781	14/03/2011	cyst wall				
+369	904	459150	12/07/2012	fibrocystic changes				
+370	913	2424597	05/03/2013	benign breast tissue				
+371	918	2542808	13/12/2011	fibroadenoma w ductal hyperplasia				
+372	920	1115392	03/07/2012	fibroadenoma				
+373	921	2777117	08/06/2012	non-proliferative fibrocystic changes				
+374	922	528448	20/12/2011	proliferative fibrocystic changes				
+375	937	1186289	17/09/2012	fibroepithelial lesion w focal cellular stroma				
+376	940	2325410	06/01/2011	columar cell changes w calcs				
+377	956	2494532	2010-Mar-11	FIBROEPITHELIAL LESION, CONSISTENT WITH FIBROADENOMA				
+378	6028	2582541	2011-Feb-18	benign				
+379	6029	2585401	2011-Jun-28	fibroadenoma 				
+380	6054	2700040	2011-Jan-17	DCIS 				
+381	7011	2703808	2011-Oct-17	benign breast tissue with dense stroma				
+382	7024	2757544	2011-Jun-28	fibroadenoma				
+383	7029	1200108	2012-Jun-19	high risk: atypical ductal hyperplasia 				
+384	7030	1139746	2013-Aug-20	benign findings 				
+385	7036	1198843	2008-Jul-31	proliferative fibrocystic changes with rare foci of atypical lobular hyperplasia				
+386	7043	2607786	2013-Feb-13	fibroadenoma				
+387	7045	1051732	2011-Oct-24	benign breast tissue 				
+388	7054	5329236	2008-Oct-9	fibroadenoma				
+389	7055	779305	2013-Jun-12	BENIGN BREAST PARENCHYMA WITH USUAL DUCTAL HYPERPLASIA AND STROMAL FIBROSIS 				
+390	7066	2488555	2013-Mar-4	BENIGN BREAST TISSUE WITH PSEUDO ANGIOMATOUS STROMAL HYPERPLASIA AND COLUMNAR CELL CHANGE				
+391	7074	2611976	2014-Jan-6	 PSEUDO-ANGIOMATOUS STROMAL HYPERPLASIA				
+392	7085	2471962	2014-Feb-7	PASH and focal usual ductal hyperplasia				
+393	7088	1247005	2012-Aug-17	full pathology report not available 				
+394	7091	2724256	2011-Apr-15	Benign breast tissue with sclerosing adenosis				
+395	7094	2008430	2012-Aug-7	 Benign breast parenchyma with mild lymphocytic inflammation and rare microcalcifications				
+396	7095	2228486	2012-May-25	USUAL DUCTAL HYPERPLASIA FOCAL SECRETORY CHANGES AND CALCIFICATION				
+397	7096	954297	2011-Aug-2	FIBROADENOMA				
+398	7097	2578710	2013-Dec-9	benign breast parenchyma, PASH, focal usualy ductal hyperplasia 				
+399	7110	5374530	2012-Mar-19	benign breast tissue 				
+400	7116	5156620	2011-Aug-16	in situ lobular carcinoma 				
+401	7127	2351341	2012-Feb-14	benign breast tissue 				
+402	7145	2796379	2011-Dec-12	Focal ductal and lobular hyperplasia WITHOUT atypia				
+403	7151	2174184	2014-Mar-13	benign breast tissue with columnar cell change and PASH				
+
+
+
+
+retrieved get scans
+id	StudyID 	MRN 	Exam date	ProcedureResults	
+
+
+
+NOT retrieved get scans
+277	109	2565845	09/12/2011	dense fibrosis - Benign by Assumption
+280	122	791376	04/02/2010	proliferative fibrocystic changes; fibroadenoma		
+282	130	1264759	22/12/2008	ALH; proliferative fibrocystic changes w florid usual ductal hyperplasia
+283	132	1161706	14/07/2011	benign breast tissue - Benign by Assumption
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NEWS****
+194	massB	6027	2613	10435	20080928	S700	R	201	R	massB	BenignTissue	S4	["{'AccessionNumber': 'ACC108245', 'SeriesDate': '20080928', 'SeriesNumber': '8', 'SliceLocation': '-4.365852356', 'SeriesDescription': 'Ax Vibrant Delayed', 'PatientID': '6027CAD', 'StudyID': '2613', 'note': 'CALIPER\\\\\\\\428\\\\254\\\\417\\\\260\\\\\\\\\\\\\\\\\\\\\\\\\\\\0.6055\\\\0.6055\\\\MM\\\\0 ', 'SeriesInstanceUID': '1.2.840.113619.2.207.3596.11798736.26118.1222600066.737'}", "{'AccessionNumber': 'ACC108245', 'SeriesDate': '20080928', 'SeriesNumber': '8', 'SliceLocation': '-28.36585236', 'SeriesDescription': 'Ax Vibrant Delayed', 'PatientID': '6027CAD', 'StudyID': '2613', 'note': 'CALIPER\\\\\\\\43\\\\261\\\\58\\\\262\\\\\\\\\\\\\\\\\\\\\\\\\\\\0.6055\\\\0.6055\\\\MM\\\\0 ', 'SeriesInstanceUID': '1.2.840.113619.2.207.3596.11798736.26118.1222600066.737'}", "{'AccessionNumber': 'ACC108245', 'SeriesDate': '20080928', 'SeriesNumber': '10701', 'SliceLocation': '106.1099854', 'SeriesDescription': '(2613/701/1)-(2613/700/1)', 'PatientID': '6027CAD', 'StudyID': '2613', 'note': 'CALIPER\\\\\\\\239\\\\281\\\\241\\\\298\\\\\\\\\\\\\\\\\\\\\\\\\\\\0.4688\\\\0.4688\\\\MM\\\\0 ', 'SeriesInstanceUID': '1.2.840.113619.2.207.3596.11798736.26030.1222608838.29'}", "{'AccessionNumber': 'ACC108245', 'SeriesDate': '20080928', 'SeriesNumber': '10701', 'SliceLocation': '-118.8900146', 'SeriesDescription': '(2613/701/1)-(2613/700/1)', 'PatientID': '6027CAD', 'StudyID': '2613', 'note': 'CALIPER\\\\\\\\220\\\\350\\\\281\\\\337\\\\\\\\\\\\\\\\\\\\\\\\\\\\0.4688\\\\0.4688\\\\MM\\\\0 ', 'SeriesInstanceUID': '1.2.840.113619.2.207.3596.11798736.26030.1222608838.29'}", "{'AccessionNumber': 'ACC108245', 'SeriesDate': '20080928', 'SeriesNumber': '10702', 'SliceLocation': '130.1099854', 'SeriesDescription': '(2613/702/1)-(2613/700/1)', 'PatientID': '6027CAD', 'StudyID': '2613', 'note': 'CALIPER\\\\\\\\274\\\\264\\\\282\\\\281\\\\\\\\\\\\\\\\\\\\\\\\\\\\0.4688\\\\0.4688\\\\MM\\\\0 ', 'SeriesInstanceUID': '1.2.840.113619.2.207.3596.11798736.26030.1222608838.142'}"]
