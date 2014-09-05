@@ -48,6 +48,7 @@ class SendNew(object):
         self.queryData = Query() 
         self.load = Inputs_init()
         self.records = AddRecords()
+        
         # Create only 1 display
         self.loadDisplay = Display()
         self.createSegment = Segment()
@@ -69,21 +70,21 @@ class SendNew(object):
         if (len(StudyID) == 1 ): fStudyID='000'+StudyID
            
         # Format query reprocdateID
-        procdateID = dateID[6:10]+'-'+dateID[3:5]+'-'+dateID[0:2]
+        procdateID = datetime.date(int(dateID[6:10]), int(dateID[3:5]), int(dateID[0:2]))
         #datetime.date(int(procdateID[6:10]), int(procdateID[3:5]), int(procdateID[0:2]))
-    
-            
+                
         # perform query
         noproc = False
         try:
-            is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabasebyProc(fStudyID, procdateID)
+                is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabasebyProc(fStudyID, procdateID)
+                #is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabaseNoproced(fStudyID, procdateID)    
         except Exception:
             noproc = True
-            
+        
         if noproc:
             is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabaseNoproced(fStudyID, procdateID)
-            #is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabaseNoproced(fStudyID, procdateID)
-        
+            
+            
         # if correctly proccess
         rowCase=0 
         rowCase = int(raw_input('pick row (0-n): '))
@@ -95,9 +96,10 @@ class SendNew(object):
         print "\n----------------------------------------------------------"
         print self.queryData.radreport.iloc[rowCase][0]
         print "\n----------------------------------------------------------"
-
-        print is_mass
-        print is_nonmass   
+        print "\n MASSES:"
+        print '\n'.join([str(n) + ": " + str(entry) for (n, entry) in zip(range(0,len(is_mass)), is_mass)])
+        print "\n NON-MASSES:"
+        print '\n'.join([str(n) + ": " + str(entry) for (n, entry) in zip(range(0,len(is_mass)), is_nonmass)])  
         
         ## append collection of cases
         self.casesFrame = pd.DataFrame(columns=self.queryData.d1.columns)
@@ -413,7 +415,7 @@ class SendNew(object):
                             str(casesFrame['proc.proc_tp_int']), str(casesFrame['exam.comment_txt']), str(casesFrame['proc.original_report_txt']), str(dataCase['finding.curve_int']), str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), cond+BenignNMaligNAnt,  Diagnosis)
         
         if not 'proc.pt_procedure_id' in casesFrame.keys():
-            self.records.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), datetime.date(int(dateID[0:4]), int(dateID[4:6]), int(dateID[6:8])), str(casesFrame['exam.mri_cad_status_txt']), 
+            self.records.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
                            str(casesFrame['cad.latest_mutation']), casesFrame['finding.mri_mass_yn'], casesFrame['finding.mri_nonmass_yn'], finding_side, 'NA', 
                             datetime.date(9999, 12, 31), 'NA', 'NA', 'NA', 'NA', str(casesFrame['exam.comment_txt']), 'NA', str(dataCase['finding.curve_int']), str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), cond+BenignNMaligNAnt,  Diagnosis)
                             

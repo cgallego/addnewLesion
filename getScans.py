@@ -110,8 +110,11 @@ if __name__ == '__main__':
         AccessionN = SendNew2DB.casesFrame['exam.a_number_txt'].iloc[0]
         DicomExamNumber = SendNew2DB.casesFrame['exam.exam_img_dicom_txt'].iloc[0]
         dateID = SendNew2DB.casesFrame['exam.exam_dt_datetime'].iloc[0]
-        finding_side = SendNew2DB.casesFrame['proc.proc_side_int'].iloc[0]
-
+        if 'proc.proc_side_int' in SendNew2DB.casesFrame.keys():
+            finding_side = SendNew2DB.casesFrame['proc.proc_side_int'].iloc[0]
+        else:
+            finding_side = 'NA'
+        
         #############################
         ###### 2) Get Scans from pacs
         #############################
