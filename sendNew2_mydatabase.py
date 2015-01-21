@@ -69,20 +69,24 @@ class SendNew(object):
         if (len(StudyID) == 2 ): fStudyID='00'+StudyID
         if (len(StudyID) == 1 ): fStudyID='000'+StudyID
            
-        # Format query reprocdateID
-        procdateID = datetime.date(int(dateID[6:10]), int(dateID[3:5]), int(dateID[0:2]))
-        #datetime.date(int(procdateID[6:10]), int(procdateID[3:5]), int(procdateID[0:2]))
-                
         # perform query
         noproc = False
         try:
-                is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabasebyProc(fStudyID, procdateID)
-                #is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabaseNoproced(fStudyID, procdateID)    
+                ############# if by procDate
+                # Format query reprocdateID
+                #procdateID = datetime.date(int(dateID[6:10]), int(dateID[3:5]), int(dateID[0:2]))
+                #is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabasebyProc(fStudyID, procdateID)
+                      
+                ############# if by examDate
+                # Format query reprocdateID
+                redateID = datetime.date(int(dateID[6:10]), int(dateID[3:5]), int(dateID[0:2]))
+                is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabase(fStudyID, redateID)    
+
         except Exception:
             noproc = True
         
         if noproc:
-            is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabaseNoproced(fStudyID, procdateID)
+            is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabaseNoproced(fStudyID, redateID)
             
             
         # if correctly proccess
@@ -352,7 +356,7 @@ class SendNew(object):
         return texturefeatures
                  
         
-    def T2_extract(self, T2SeriesID, path_T2Series, lesion3D):                    
+    def T2_extract(self, T2SeriesID, path_T2Series, lesion3D, pathSegment, nameSegment):                    
         #############################        
         ###### Extract T2 features, Process T2 and visualize
         #############################
@@ -374,8 +378,8 @@ class SendNew(object):
                 
             self.loadDisplay.iren1.Start()
             
-            # Do extract_lesionSI       
-            [T2_lesionSI, lesion_scalar_range]  = self.T2.extract_lesionSI(self.load.T2Images, lesion3D, self.load.T2image_pos_pat, self.load.T2image_ori_pat, self.loadDisplay)
+            # Do extract_lesionSI          
+            [T2_lesionSI, lesion_scalar_range]  = self.T2.extract_lesionSI(self.load.T2Images, lesion3D, self.load.T2image_pos_pat, self.load.T2image_ori_pat, self.loadDisplay,  pathSegment, nameSegment)
             print "ave. T2_lesionSI: %d" % mean(T2_lesionSI)
             
             LMSIR = mean(T2_lesionSI)/mean(T2_muscleSI)
@@ -412,7 +416,7 @@ class SendNew(object):
             self.records.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
                            str(casesFrame['cad.latest_mutation']), casesFrame['finding.mri_mass_yn'], casesFrame['finding.mri_nonmass_yn'], finding_side, str(casesFrame['proc.pt_procedure_id']), 
                             casesFrame['proc.proc_dt_datetime'], str(casesFrame['proc.proc_side_int']), str(casesFrame['proc.proc_source_int']),  str(casesFrame['proc.proc_guid_int']), 
-                            str(casesFrame['proc.proc_tp_int']), str(casesFrame['exam.comment_txt']), str(casesFrame['proc.original_report_txt']), str(dataCase['finding.curve_int']), str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), cond+BenignNMaligNAnt,  Diagnosis)
+                            str(casesFrame['proc.proc_tp_int']), str(casesFrame['exam.comment_txt']), str(casesFrame['proc.original_report_txt']), str(dataCase['finding.curve_int']), str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), str(cond)+str(BenignNMaligNAnt),  Diagnosis)
         
         if not 'proc.pt_procedure_id' in casesFrame.keys():
             self.records.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
@@ -475,7 +479,12 @@ class SendNew(object):
                                             textureT2features['T2texture_correlation_zero'], textureT2features['T2texture_correlation_quarterRad'], textureT2features['T2texture_correlation_halfRad'], textureT2features['T2texture_correlation_threeQuaRad'], 
                                             textureT2features['T2texture_ASM_zero'], textureT2features['T2texture_ASM_quarterRad'], textureT2features['T2texture_ASM_halfRad'], textureT2features['T2texture_ASM_threeQuaRad'], 
                                             textureT2features['T2texture_energy_zero'], textureT2features['T2texture_energy_quarterRad'], textureT2features['T2texture_energy_halfRad'], textureT2features['T2texture_energy_threeQuaRad'])
-                                                 
+    
+    def addRecordDB_stage1(self, lesion_id, d_euclidean, earlySE, dce2SE, dce3SE, lateSE, ave_T2, network_meas):        
+        
+        # Send to database lesion info
+        self.records.stage1_2DB(lesion_id, d_euclidean, earlySE, dce2SE, dce3SE, lateSE, ave_T2, network_meas)
+              
         return
 
     

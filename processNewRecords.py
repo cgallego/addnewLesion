@@ -38,6 +38,7 @@ import mydatabase
 from sqlalchemy.orm import sessionmaker
 from add_records import *
 from sendNew2_mydatabase import *
+from newFeatures import *
 
 
 def getScans(data_loc, img_folder, fileline, PatientID, StudyID, AccessionN, oldExamID):
@@ -98,8 +99,8 @@ if __name__ == '__main__':
         StudyID = fileline[1] 
         PatientID = fileline[2]  
         procdateID = fileline[3]
-        Diagnosis = fileline[4:]
-        print Diagnosis
+        Diagnosis = fileline[5:]
+        print procdateID
         
         #############################
         ###### 1) Querying Research database for clinical, pathology, radiology data
@@ -114,7 +115,10 @@ if __name__ == '__main__':
             finding_side = SendNew2DB.casesFrame['proc.proc_side_int'].iloc[0]
         else:
             finding_side = 'NA'
-            
+
+        pathSegment = 'C:\Users\windows\Documents\repoCode-local\stage1features\seg+T2'
+        nameSegment = StudyID+'_'+AccessionN+'_'+str(SendNew2DB.casesFrame['proc.pt_procedure_id'].iloc[0])+'.vtk'
+                    
         #############################
         ###### 2) Get Scans from pacs
         #############################
@@ -145,10 +149,11 @@ if __name__ == '__main__':
         T2SeriesID='NONE'
         [path_T2Series, T2SeriesID] = SendNew2DB.processT2(T2SeriesID, img_folder, StudyID, DicomExamNumber)
         
+        
         #############################
         # 4) Extract Lesion and Muscle Major pectoralies signal                                   
         ############################# 
-        [T2_muscleSI, muscle_scalar_range, bounds_muscleSI, T2_lesionSI, lesion_scalar_range, LMSIR, morphoT2features, textureT2features] = SendNew2DB.T2_extract(T2SeriesID, path_T2Series, lesion3D)
+        [T2_muscleSI, muscle_scalar_range, bounds_muscleSI, T2_lesionSI, lesion_scalar_range, LMSIR, morphoT2features, textureT2features] = SendNew2DB.T2_extract(T2SeriesID, path_T2Series, lesion3D, pathSegment, nameSegment)
 
         #############################
         ###### 4) Extract Dynamic features
@@ -165,11 +170,28 @@ if __name__ == '__main__':
         #############################
         texturefeatures = SendNew2DB.extract_text(series_path, phases_series, SendNew2DB.lesion3D)       
         
+        
+        #############################
+        ###### 7) Extract new features from each DCE-T1 and from T2 using segmented lesion
+        #############################
+        newfeatures = newFeatures(SendNew2DB.load, SendNew2DB.loadDisplay)
+        [deltaS, t_delta, centerijk] = newfeatures.extract_MRIsamp(series_path, phases_series, lesion3D, T2SeriesID)
+        
+        # generate nodes from segmantation 
+        [nnodes, curveT, earlySE, dce2SE, dce3SE, lateSE, ave_T2, prop] = newfeatures.generateNodesfromKmeans(deltaS['i0'], deltaS['j0'], deltaS['k0'], deltaS, centerijk, T2SeriesID)    
+        [kmeansnodes, d_euclideanNodes] = prop
+        
+        # pass nodes to lesion graph
+        G = newfeatures.createGraph(nnodes, curveT, prop)                   
+
+        [degreeC, closenessC, betweennessC, no_triangles, no_con_comp] = newfeatures.analyzeGraph(G)        
+        network_measures = [degreeC, closenessC, betweennessC, no_triangles, no_con_comp]
+        
+        
         #############################
         ###### 8) End and Send record to DB
         #############################
-        SendNew2DB.addRecordDB_lesion(Lesionfile, SendNew2DB.casesFrame['id'].iloc[0], DicomExamNumber, dateID, SendNew2DB.casesFrame.iloc[0], finding_side, SendNew2DB.dataCase.iloc[0], cond, Diagnosis, 
-                           lesion_id, BenignNMaligNAnt,  SeriesID, T2SeriesID)
+        SendNew2DB.addRecordDB_lesion(Lesionfile, SendNew2DB.casesFrame['id'].iloc[0], DicomExamNumber, dateID, SendNew2DB.casesFrame.iloc[0], finding_side, SendNew2DB.dataCase.iloc[0], cond, Diagnosis, lesion_id, BenignNMaligNAnt,  SeriesID, T2SeriesID)
                            
         SendNew2DB.addRecordDB_features(lesion_id, dyn_inside, dyn_contour, morphofeatures, texturefeatures)   
 
@@ -177,7 +199,10 @@ if __name__ == '__main__':
 
         SendNew2DB.addRecordDB_T2(lesion_id, T2SeriesID, SendNew2DB.dataCase.iloc[0], morphoT2features, textureT2features, T2_muscleSI, muscle_scalar_range, bounds_muscleSI, T2_lesionSI, lesion_scalar_range, LMSIR)
     
-        
+        #############################
+        print "\n Adding record case to stage1"
+        SendNew2DB.addRecordDB_stage1(lesion_id, d_euclideanNodes, earlySE, dce2SE, dce3SE, lateSE, ave_T2, network_measures)
+
         ## continue to next case
         line = file_ids.readline()
         print line
