@@ -29,7 +29,6 @@ from features_morphology import *
 from features_texture import *
 from features_T2 import *
 import pylab      
-
  
 from sqlalchemy import Column, Integer, String
 import datetime
@@ -110,6 +109,8 @@ if __name__ == '__main__':
         
         AccessionN = SendNew2DB.casesFrame['exam.a_number_txt'].iloc[0]
         DicomExamNumber = SendNew2DB.casesFrame['exam.exam_img_dicom_txt'].iloc[0]
+        ## for old DicomExamNumber         
+        #AccessionN = DicomExamNumber
         dateID = SendNew2DB.casesFrame['exam.exam_dt_datetime'].iloc[0]
         if 'proc.proc_side_int' in SendNew2DB.casesFrame.keys():
             finding_side = SendNew2DB.casesFrame['proc.proc_side_int'].iloc[0]
@@ -117,7 +118,13 @@ if __name__ == '__main__':
             finding_side = 'NA'
 
         pathSegment = 'C:\Users\windows\Documents\repoCode-local\stage1features\seg+T2'
-        nameSegment = StudyID+'_'+AccessionN+'_'+str(SendNew2DB.casesFrame['proc.pt_procedure_id'].iloc[0])+'.vtk'
+        if 'proc.pt_procedure_id' in SendNew2DB.casesFrame.keys():
+            nameSegment = StudyID+'_'+AccessionN+'_'+str(SendNew2DB.casesFrame['proc.pt_procedure_id'].iloc[0])+'.vtk'
+            ## for old DicomExamNumber         
+            nameSegment = StudyID+'_'+AccessionN+'_'+str(fileline[4])+'.vtk'
+        else:
+            nameSegment = StudyID+'_'+AccessionN+'_'+'lesion.vtk'
+            
                     
         #############################
         ###### 2) Get Scans from pacs
@@ -145,7 +152,7 @@ if __name__ == '__main__':
         #############################
         ###### 3) Get T2 info
         #############################
-        #img_folder = 'Z:/Cristina/MassNonmass/mass/'
+        img_folder = 'Z:/Cristina/MassNonmass/mass/'
         T2SeriesID='NONE'
         [path_T2Series, T2SeriesID] = SendNew2DB.processT2(T2SeriesID, img_folder, StudyID, DicomExamNumber)
         
@@ -153,7 +160,7 @@ if __name__ == '__main__':
         #############################
         # 4) Extract Lesion and Muscle Major pectoralies signal                                   
         ############################# 
-        [T2_muscleSI, muscle_scalar_range, bounds_muscleSI, T2_lesionSI, lesion_scalar_range, LMSIR, morphoT2features, textureT2features] = SendNew2DB.T2_extract(T2SeriesID, path_T2Series, lesion3D, pathSegment, nameSegment)
+        [T2_muscleSI, muscle_scalar_range, bounds_muscleSI, T2_lesionSI, lesion_scalar_range, LMSIR, morphoT2features, textureT2features] = SendNew2DB.T2_extract(T2SeriesID, path_T2Series, lesion3D, pathSegment, nameSegment, finding_side)
 
         #############################
         ###### 4) Extract Dynamic features

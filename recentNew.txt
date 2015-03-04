@@ -1,26 +1,6 @@
-413	3000	4546854	04/01/2008	lobular invasive 		
-414	331	7347095	16/02/2013	left non proliferative fibrocystic changes 			
-415	3017	7014437	31/01/2012	right columnar cell change with focal hyperplasia and calcifications 			
-416	3018	6865137	12/09/2011	benign-FAT NECROSIS; calcs			
-417	3063	7053508	18/02/2012	right lymphovascular invasion 			
-418	3020	7395195	16/04/2013	left PASH, fibrosis and columnar cell change			
-419	3026	7313078	23/02/2013	 NON PROLIFERATIVE FIBROCYSTIC			
-420	3028	6991592	12/12/2011	left columnar cell hyperplasia 			
-421	3030	7642998	18/01/2014	right benign breast tissue 			
-422	3033	7102986	07/08/2012	left benign breast tissue 			
-423	7105	7837892	25/10/2014	IDC			
-424	4049	7009602	05/01/2012	IDC			
-425	3035	7002031	06/01/2012	right fibroadenoma, columnar cell change 			
-426	3035	7145247	28/08/2012	left benign breast tissue 			
-427	3039	3628156	22/02/2005	left fibrocystic changes 			
-428	3039	6894870	29/08/2011	left usual ductal hyperplasia 			
-429	3045	6885313	03/10/2011	benign-breast tissue			
-430	3045	7149704	24/10/2012	left benign breast parenchyma with adenosis 			
-431	3046	7682447	27/11/2013	right fibroepithelial lesion with cellular stroma 			
-432	3052	7100200	31/03/2012	left stromal fibrosis 			
-433	3053	7449310	07/04/2013	right IDC and calcifications 			
-434	3053	7041483	31/01/2012	left benign breast parenchyma with columnar cell change 			
-435	3055	7060620	07/03/2012	left IDC 			
+426	3053	7449310	07/04/2013	right IDC and calcifications 			
+427	3053	7041483	31/01/2012	left benign breast parenchyma with columnar cell change 			
+428	3055	7060620	07/03/2012	left IDC 	 		
 436	3055	7742700	25/03/2014	right columnar cell change and PASH 			
 437	616	8026103	21/11/2014	DCISmicro			
 438	3092	----   	20/09/2007	benign-PERILOBULAR LYMPHOCYTIC MASTITIS			
@@ -119,7 +99,30 @@ DONE
 ### id	CAD study #	Accession #	Date of Exam	Pathology Diagnosis 
 411	3004	7691918	16/02/2014	left rare calcifications and fibrocystic changes 			
 412	7053	7956343	13/10/2014	lesion resolved 
+413	331	7347095	16/02/2013	left non proliferative fibrocystic changes 			
+414	331	7347095	16/02/2013	left non proliferative fibrocystic changes 			
+415	3017	7014437	31/01/2012	right columnar cell change with focal hyperplasia and calcifications 			
+416	3063	7053508	18/02/2012	right lymphovascular invasion 			
+417	3020	7395195	16/04/2013	left PASH, fibrosis and columnar cell change			
+418	7105	7837892	25/10/2014	IDC			
+419	4049	7009602	05/01/2012	IDC			
+420	3028	6991592	12/12/2011	left columnar cell hyperplasia 
+421	3030	7642998	18/01/2014	right benign breast tissue 			
+422	3039	6894870	29/08/2011	left usual ductal hyperplasia 
+423	3035	7002031	06/01/2012	right fibroadenoma, columnar cell change 			
+424	3035	7145247	28/08/2012	left benign breast tissue 	
+425	3046	7682447	27/11/2013	right fibroepithelial lesion with cellular stroma 			
 
+
+### removed
+413	3000	4546854	04/01/2008	lobular invasive 		NOTE: only up to Ph3/post-contrast
+416	3018	6865137	12/09/2011	benign-FAT NECROSIS; calcs			# no pathology and no previous
+418	3033	7102986	07/08/2012	left benign breast tissue 			# only foci not mass/nonmass
+420	3039	3628156	22/02/2005	left fibrocystic changes                # NOT FOUND IN AS0SUNB			
+420	3026	7313078	23/02/2013	 NON PROLIFERATIVE FIBROCYSTIC		# ambiguous finding not mass/nonmass	
+423	3045	6885313	03/10/2011	benign-breast tissue	# check for thickenning finding,, not mass/nonmass but biopsied by VAB MRI
+425	3045	7149704	24/10/2012	left benign breast parenchyma with adenosis 	   # nOT FOUDN AS0SUNB		
+426	3052	7100200	31/03/2012	left stromal fibrosis 	# foci finding
 
 # not found in AS0SUN
---	3000	1003160	04/01/2008	4546854	
+

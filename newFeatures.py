@@ -16,14 +16,8 @@ import psycopg2
 import pandas as pd
 
 import processDicoms
-
 from inputs_init import *
 from display import *
-from features_dynamic import *
-from features_morphology import *
-from features_texture import *
-from features_T2 import *
-from segment import *
 import pylab      
 import annot
 from add_records import *
@@ -37,6 +31,8 @@ import scipy.spatial.distance as dist
 import networkx as nx
 import itertools
 from collections import Counter
+import datetime
+
 
 class newFeatures(object):
     """

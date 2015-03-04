@@ -195,6 +195,7 @@ class SendNew(object):
         return SeriesID, series_path, phases_series, lesionID_path, annotationsfound
         
         
+        
     def segmentLesion(self, path_rootFolder, cond, StudyID, AccessionN, SeriesID, lesionID_path, lesion_id, LesionZslice):  
         """ Create a segmentation and check with annotations, if any"""
         
@@ -356,7 +357,7 @@ class SendNew(object):
         return texturefeatures
                  
         
-    def T2_extract(self, T2SeriesID, path_T2Series, lesion3D, pathSegment, nameSegment):                    
+    def T2_extract(self, T2SeriesID, path_T2Series, lesion3D, pathSegment, nameSegment, finding_side):                    
         #############################        
         ###### Extract T2 features, Process T2 and visualize
         #############################
@@ -369,7 +370,7 @@ class SendNew(object):
             self.loadDisplay.addT2visualize(self.load.T2Images, self.load.T2image_pos_pat, self.load.T2image_ori_pat, self.load.T2dims, self.load.T2spacing, interact=True)
             transT2 = int(raw_input('\n Translate T2 by xf_T1? Yes:1 No:0 : '))
             if transT2:
-                self.loadDisplay.addT2transvisualize(self.load.T2Images, self.load.T2image_pos_pat, self.load.T2image_ori_pat, self.load.T2dims, self.load.T2spacing, interact=True)
+                self.loadDisplay.addT2transvisualize(self.load.T2Images, self.load.T2image_pos_pat, self.load.T2image_ori_pat, self.load.T2dims, self.load.T2spacing, finding_side, interact=True)
                 self.load.T2image_pos_pat[0] = -self.loadDisplay.T2origin[2] 
     
             # Do extract_muscleSI 
