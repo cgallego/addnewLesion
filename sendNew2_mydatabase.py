@@ -17,6 +17,7 @@ import psycopg2
 import pandas as pd
 
 from query_database import *
+from query_mydatabase import *
 import processDicoms
 
 from inputs_init import *
@@ -34,8 +35,11 @@ import datetime
 from mybase import myengine
 import mydatabase
 from sqlalchemy.orm import sessionmaker
-from add_records import *
+from add_newrecords import *
 
+# to query biomatrix only needed
+import database
+from base import Base, engine
 
 class SendNew(object):
     """
@@ -47,7 +51,8 @@ class SendNew(object):
         self.dataInfo = []
         self.queryData = Query() 
         self.load = Inputs_init()
-        self.records = AddRecords()
+        self.newrecords = AddNewRecords()
+        self.queryBio = QuerymyDatabase()
         
         # Create only 1 display
         self.loadDisplay = Display()
@@ -151,7 +156,35 @@ class SendNew(object):
 
         return img_folder, cond, BenignNMaligNAnt, Diagnosis, rowCase
         
+
+    def queryRadioData(self, StudyID, dateID):
+        """ Querying without known condition (e.g: mass, non-mass) if benign by assumption query only findings"""
+        #############################
+        ###### 1) Querying Research database for clinical, pathology, radiology data
+        #############################
+        print "Executing SQL connection..."
+        # Format query StudyID
+        if (len(StudyID) >= 4 ): fStudyID=StudyID
+        if (len(StudyID) == 3 ): fStudyID='0'+StudyID
+        if (len(StudyID) == 2 ): fStudyID='00'+StudyID
+        if (len(StudyID) == 1 ): fStudyID='000'+StudyID
         
+        try:
+            ############# Query biomatrix
+            biomtx_Session = sessionmaker()
+            biomtx_Session.configure(bind=engine)  # once engine is available
+            sessionbiomtx = biomtx_Session() #instantiate a Session
+            
+            redateID = datetime.date(int(dateID[6:10]), int(dateID[3:5]), int(dateID[0:2]))
+            radiologyinfo = self.queryBio.queryBiomatrix(sessionbiomtx, fStudyID, redateID)
+                        
+        except Exception:
+            print "Not able to query biomatrix"
+            pass
+            
+        return radiologyinfo       
+
+    
     def extractSeries(self, img_folder, lesion_id, StudyID, AccessionN):
         """ extract Series info and Annotations, then load"""
         [abspath_ExamID, eID, SeriesIDall, studyFolder, dicomInfo] = processDicoms.get_series(StudyID, img_folder+os.sep)
@@ -414,21 +447,21 @@ class SendNew(object):
         #############################  
         print "\n Adding record case to DB..."
         if 'proc.pt_procedure_id' in casesFrame.keys():
-            self.records.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
+            self.newrecords.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
                            str(casesFrame['cad.latest_mutation']), casesFrame['finding.mri_mass_yn'], casesFrame['finding.mri_nonmass_yn'], finding_side, str(casesFrame['proc.pt_procedure_id']), 
                             casesFrame['proc.proc_dt_datetime'], str(casesFrame['proc.proc_side_int']), str(casesFrame['proc.proc_source_int']),  str(casesFrame['proc.proc_guid_int']), 
                             str(casesFrame['proc.proc_tp_int']), str(casesFrame['exam.comment_txt']), str(casesFrame['proc.original_report_txt']), str(dataCase['finding.curve_int']), str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), str(cond)+str(BenignNMaligNAnt),  Diagnosis)
         
         if not 'proc.pt_procedure_id' in casesFrame.keys():
-            self.records.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
+            self.newrecords.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
                            str(casesFrame['cad.latest_mutation']), casesFrame['finding.mri_mass_yn'], casesFrame['finding.mri_nonmass_yn'], finding_side, 'NA', 
                             datetime.date(9999, 12, 31), 'NA', 'NA', 'NA', 'NA', str(casesFrame['exam.comment_txt']), 'NA', str(dataCase['finding.curve_int']), str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), cond+BenignNMaligNAnt,  Diagnosis)
                             
         if "mass" == cond:
-            self.records.mass_2DB(lesion_id, str(BenignNMaligNAnt), SeriesID, T2SeriesID, dataCase['finding.mammo_n_mri_mass_shape_int'], dataCase['finding.mri_mass_margin_int'] )
+            self.newrecords.mass_2DB(lesion_id, str(BenignNMaligNAnt), SeriesID, T2SeriesID, dataCase['finding.mammo_n_mri_mass_shape_int'], dataCase['finding.mri_mass_margin_int'] )
 
         if "nonmass" == cond: 
-            self.records.nonmass_2DB(lesion_id, str(BenignNMaligNAnt), SeriesID, T2SeriesID, dataCase['finding.mri_nonmass_dist_int'], dataCase['finding.mri_nonmass_int_enh_int'])
+            self.newrecords.nonmass_2DB(lesion_id, str(BenignNMaligNAnt), SeriesID, T2SeriesID, dataCase['finding.mri_nonmass_dist_int'], dataCase['finding.mri_nonmass_int_enh_int'])
         
         return
         
@@ -436,15 +469,15 @@ class SendNew(object):
     def addRecordDB_features(self, lesion_id, dyn_inside, dyn_contour, morphofeatures, texturefeatures): 
         # send features
         # Dynamic
-        self.records.dyn_records_2DB(lesion_id, dyn_inside['A.inside'], dyn_inside['alpha.inside'], dyn_inside['beta.inside'], dyn_inside['iAUC1.inside'], dyn_inside['Slope_ini.inside'], dyn_inside['Tpeak.inside'], dyn_inside['Kpeak.inside'], dyn_inside['SER.inside'], dyn_inside['maxCr.inside'], dyn_inside['peakCr.inside'], dyn_inside['UptakeRate.inside'], dyn_inside['washoutRate.inside'], dyn_inside['maxVr.inside'], dyn_inside['peakVr.inside'], dyn_inside['Vr_increasingRate.inside'], dyn_inside['Vr_decreasingRate.inside'], dyn_inside['Vr_post_1.inside'],
+        self.newrecords.dyn_records_2DB(lesion_id, dyn_inside['A.inside'], dyn_inside['alpha.inside'], dyn_inside['beta.inside'], dyn_inside['iAUC1.inside'], dyn_inside['Slope_ini.inside'], dyn_inside['Tpeak.inside'], dyn_inside['Kpeak.inside'], dyn_inside['SER.inside'], dyn_inside['maxCr.inside'], dyn_inside['peakCr.inside'], dyn_inside['UptakeRate.inside'], dyn_inside['washoutRate.inside'], dyn_inside['maxVr.inside'], dyn_inside['peakVr.inside'], dyn_inside['Vr_increasingRate.inside'], dyn_inside['Vr_decreasingRate.inside'], dyn_inside['Vr_post_1.inside'],
                                dyn_contour['A.contour'], dyn_contour['alpha.contour'], dyn_contour['beta.contour'], dyn_contour['iAUC1.contour'], dyn_contour['Slope_ini.contour'], dyn_contour['Tpeak.contour'], dyn_contour['Kpeak.contour'], dyn_contour['SER.contour'], dyn_contour['maxCr.contour'], dyn_contour['peakCr.contour'], dyn_contour['UptakeRate.contour'], dyn_contour['washoutRate.contour'], dyn_contour['maxVr.contour'], dyn_contour['peakVr.contour'], dyn_contour['Vr_increasingRate.contour'], dyn_contour['Vr_decreasingRate.contour'], dyn_contour['Vr_post_1.contour'] )
         
         # Morphology
-        self.records.morpho_records_2DB(lesion_id, morphofeatures['min_F_r_i'], morphofeatures['max_F_r_i'], morphofeatures['mean_F_r_i'], morphofeatures['var_F_r_i'], morphofeatures['skew_F_r_i'], morphofeatures['kurt_F_r_i'], morphofeatures['iMax_Variance_uptake'], 
+        self.newrecords.morpho_records_2DB(lesion_id, morphofeatures['min_F_r_i'], morphofeatures['max_F_r_i'], morphofeatures['mean_F_r_i'], morphofeatures['var_F_r_i'], morphofeatures['skew_F_r_i'], morphofeatures['kurt_F_r_i'], morphofeatures['iMax_Variance_uptake'], 
                                                   morphofeatures['iiMin_change_Variance_uptake'], morphofeatures['iiiMax_Margin_Gradient'], morphofeatures['k_Max_Margin_Grad'], morphofeatures['ivVariance'], morphofeatures['circularity'], morphofeatures['irregularity'], morphofeatures['edge_sharp_mean'],
                                                   morphofeatures['edge_sharp_std'], morphofeatures['max_RGH_mean'], morphofeatures['max_RGH_mean_k'], morphofeatures['max_RGH_var'], morphofeatures['max_RGH_var_k'] )
         # Texture
-        self.records.texture_records_2DB(lesion_id, texturefeatures['texture_contrast_zero'], texturefeatures['texture_contrast_quarterRad'], texturefeatures['texture_contrast_halfRad'], texturefeatures['texture_contrast_threeQuaRad'], 
+        self.newrecords.texture_records_2DB(lesion_id, texturefeatures['texture_contrast_zero'], texturefeatures['texture_contrast_quarterRad'], texturefeatures['texture_contrast_halfRad'], texturefeatures['texture_contrast_threeQuaRad'], 
                                                   texturefeatures['texture_homogeneity_zero'], texturefeatures['texture_homogeneity_quarterRad'], texturefeatures['texture_homogeneity_halfRad'], texturefeatures['texture_homogeneity_threeQuaRad'], 
                                                   texturefeatures['texture_dissimilarity_zero'], texturefeatures['texture_dissimilarity_quarterRad'], texturefeatures['texture_dissimilarity_halfRad'], texturefeatures['texture_dissimilarity_threeQuaRad'], 
                                                   texturefeatures['texture_correlation_zero'], texturefeatures['texture_correlation_quarterRad'], texturefeatures['texture_correlation_halfRad'], texturefeatures['texture_correlation_threeQuaRad'], 
@@ -456,12 +489,12 @@ class SendNew(object):
     def addRecordDB_annot(self, lesion_id, annot_attrib, eu_dist_mkers, eu_dist_seg):
         # Send annotation if any
         if annot_attrib:
-            self.records.annot_records_2DB(lesion_id, annot_attrib['AccessionNumber'], annot_attrib['SeriesDate'], annot_attrib['SeriesNumber'], annot_attrib['SliceLocation'], annot_attrib['SeriesDescription'], annot_attrib['PatientID'], annot_attrib['StudyID'], annot_attrib['SeriesInstanceUID'], annot_attrib['note'], annot_attrib['xi'], annot_attrib['yi'], annot_attrib['xf'], annot_attrib['yf'], 
+            self.newrecords.annot_records_2DB(lesion_id, annot_attrib['AccessionNumber'], annot_attrib['SeriesDate'], annot_attrib['SeriesNumber'], annot_attrib['SliceLocation'], annot_attrib['SeriesDescription'], annot_attrib['PatientID'], annot_attrib['StudyID'], annot_attrib['SeriesInstanceUID'], annot_attrib['note'], annot_attrib['xi'], annot_attrib['yi'], annot_attrib['xf'], annot_attrib['yf'], 
                                                     str(annot_attrib['pi_ijk']), str(annot_attrib['pi_2display']), str(annot_attrib['pf_ijk']), str(annot_attrib['pf_2display']),
                                                     eu_dist_mkers, eu_dist_seg)
         
         # SEgmentation details
-        self.records.segment_records_2DB(lesion_id, self.loadDisplay.lesion_bounds[0], self.loadDisplay.lesion_bounds[1], self.loadDisplay.lesion_bounds[2], self.loadDisplay.lesion_bounds[3], self.loadDisplay.lesion_bounds[4], self.loadDisplay.lesion_bounds[5],
+        self.newrecords.segment_records_2DB(lesion_id, self.loadDisplay.lesion_bounds[0], self.loadDisplay.lesion_bounds[1], self.loadDisplay.lesion_bounds[2], self.loadDisplay.lesion_bounds[3], self.loadDisplay.lesion_bounds[4], self.loadDisplay.lesion_bounds[5],
                                                     self.loadDisplay.no_pts_segm, self.loadDisplay.VOI_vol, self.loadDisplay.VOI_surface, self.loadDisplay.VOI_efect_diameter, str(list(self.loadDisplay.lesion_centroid)), str(self.lesion_centroid_ijk))
                                                     
 
@@ -472,7 +505,7 @@ class SendNew(object):
                                                               
         # T2 relative signal, morphology and texture
         if T2SeriesID != 'NONE':                                                       
-            self.records.t2_records_2DB(lesion_id, dataCase['finding.t2_signal_int'], str(list(self.load.T2dims)), str(list(self.load.T2spacing)), str(self.load.T2fatsat), mean(T2_muscleSI), std(T2_muscleSI), str(muscle_scalar_range), str(bounds_muscleSI), mean(T2_lesionSI), std(T2_lesionSI), str(lesion_scalar_range), LMSIR, 
+            self.newrecords.t2_records_2DB(lesion_id, dataCase['finding.t2_signal_int'], str(list(self.load.T2dims)), str(list(self.load.T2spacing)), str(self.load.T2fatsat), mean(T2_muscleSI), std(T2_muscleSI), str(muscle_scalar_range), str(bounds_muscleSI), mean(T2_lesionSI), std(T2_lesionSI), str(lesion_scalar_range), LMSIR, 
                                             morphoT2features['T2min_F_r_i'], morphoT2features['T2max_F_r_i'], morphoT2features['T2mean_F_r_i'], morphoT2features['T2var_F_r_i'], morphoT2features['T2skew_F_r_i'], morphoT2features['T2kurt_F_r_i'], morphoT2features['T2grad_margin'], morphoT2features['T2grad_margin_var'], morphoT2features['T2RGH_mean'], morphoT2features['T2RGH_var'], 
                                             textureT2features['T2texture_contrast_zero'], textureT2features['T2texture_contrast_quarterRad'], textureT2features['T2texture_contrast_halfRad'], textureT2features['T2texture_contrast_threeQuaRad'], 
                                             textureT2features['T2texture_homogeneity_zero'], textureT2features['T2texture_homogeneity_quarterRad'], textureT2features['T2texture_homogeneity_halfRad'], textureT2features['T2texture_homogeneity_threeQuaRad'], 
@@ -484,8 +517,26 @@ class SendNew(object):
     def addRecordDB_stage1(self, lesion_id, d_euclidean, earlySE, dce2SE, dce3SE, lateSE, ave_T2, network_meas):        
         
         # Send to database lesion info
-        self.records.stage1_2DB(lesion_id, d_euclidean, earlySE, dce2SE, dce3SE, lateSE, ave_T2, network_meas)
+        self.newrecords.stage1_2DB(lesion_id, d_euclidean, earlySE, dce2SE, dce3SE, lateSE, ave_T2, network_meas)
               
         return
 
+
+    
+    def addRecordDB_radiology(self, lesion_id, radioinfo):        
+        
+        # Send to database lesion info
+        self.newrecords.radiology_2DB(lesion_id, radioinfo['cad.cad_pt_no_txt'], radioinfo['cad.latest_mutation'], radioinfo['exam.exam_dt_datetime'],
+                        radioinfo['exam.mri_cad_status_txt'], radioinfo['exam.comment_txt'], 
+                        str(radioinfo['exam.original_report_txt']),
+                        radioinfo['exam.sty_indicator_rout_screening_obsp_yn'], 
+                        radioinfo['exam.sty_indicator_high_risk_yn'], radioinfo['exam.sty_indicator_high_risk_brca_1_yn'], radioinfo['exam.sty_indicator_high_risk_brca_2_yn'], radioinfo['exam.sty_indicator_high_risk_brca_1_or_2_yn'], 
+                        radioinfo['exam.sty_indicator_high_risk_at_yn'], radioinfo['exam.sty_indicator_high_risk_other_gene_yn'],
+                        radioinfo['exam.sty_indicator_high_risk_prior_high_risk_marker_yn'], radioinfo['exam.sty_indicator_high_risk_prior_personal_can_hist_yn'], radioinfo['exam.sty_indicator_high_risk_hist_of_mantle_rad_yn'],
+                        radioinfo['exam.sty_indicator_high_risk_fam_hist_yn'], radioinfo['exam.sty_indicator_add_eval_as_folup_yn'], radioinfo['exam.sty_indicator_folup_after_pre_exam_yn'], 
+                        radioinfo['exam.sty_indicator_pre_operative_extent_of_dis_yn'], radioinfo['exam.sty_indicator_post_operative_margin_yn'], radioinfo['exam.sty_indicator_pre_neoadj_trtmnt_yn'],
+                        radioinfo['exam.sty_indicator_prob_solv_diff_img_yn'], radioinfo['exam.sty_indicator_scar_vs_recurr_yn'], radioinfo['exam.sty_indicator_folup_recommend_yn'], 
+                        radioinfo['exam.sty_indicator_prior_2_prophy_mast_yn'])
+              
+        return
     

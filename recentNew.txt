@@ -1,101 +1,7 @@
-426	3053	7449310	07/04/2013	right IDC and calcifications 			
-427	3053	7041483	31/01/2012	left benign breast parenchyma with columnar cell change 			
-428	3055	7060620	07/03/2012	left IDC 	 		
-436	3055	7742700	25/03/2014	right columnar cell change and PASH 			
-437	616	8026103	21/11/2014	DCISmicro			
-438	3092	----   	20/09/2007	benign-PERILOBULAR LYMPHOCYTIC MASTITIS			
-439	3092	4473234	28/09/2007	right  - BREAST TISSUE WITH FOCAL STROMAL FIBROSIS AND MILD PERILOBULAR CHRONIC INFLAMMATION.			
-440	3093	7790909	24/03/2014	benign			
-441	3097	7024601	16/01/2012	ADH			
-442	2042	4907456	10/03/2009	ADH			
-443	2042	7062134	02/03/2012	IDC			
-444	3086	7796137	07/04/2014	benign			
-445	3082	5378256	24/09/2010	"     Breast, right, biopsy site 1:     - FIBROADENOMA     - PROLIFERATIVE FIBROCYSTIC CHANGES"	"     Breast, right, biopsy site 2:     - PROLIFERATIVE FIBROCYSTIC CHANGE"		
-446	3082	7101412	02/04/2012	PROLIFERATIVE FIBROCYSTIC CHANGES			
-447	3083	5432457	15/11/2010	BENIGN BREAST TISSUE			
-448	4003	7098464	02/04/2012	"     Part A - Right breast posterior inferior mass, core biopsy:   - RADIAL SCAR WITH FLORID DUCTAL HYPERPLASIA     - DENSE FIBROSIS AND FIBROADENOMATOID CHANGE     - SCLEROSING ADENOSIS AND MICROCALCIFICATIONS"	"     Part B - Right breast retroareolar non mass, core biopsy:     -DENSE FIBROSIS AND FIBROADENOMA     -USUAL DUCTAL HYPERPLASIA     -BIOPSY SITE REACTION"		
-449	954	8021442	21/11/2014	MINUTE FOCUS OF ATYPICAL LOBULAR HYPERPLASIA; COLUMNAR CELL CHANGE; FOCAL USUAL DUCTAL HYPERPLASIA			
-450	4008	7026518	24/01/2012	Part A - Right breast core biopsies: FLAT EPITHELIAL ATYPIA AND ATYPICAL DUCTAL HYPERPLASIA		Part B - Left breast core biopsies: PROLIFERATIVE FIBROCYSTIC CHANGES COLUMNAR CELL CHANGES AND HYPERPLASIA.	
-451	4025		08/02/2012	Right chest wall biopsy ( mastectomy site): -RECURRENT INVASIVE DUCTAL CARCINOMA, MICROPAPILLARY TYPE			
-452	4026	7059514	28/02/2012	     Left breast, core biopsy: RADIAL SCAR; ATYPICAL DUCTAL HYPERPLASIA			
-453	4029	7735988	28/01/2014	 LOBULAR CARCINOMA IN SITU			
-454	4032	6890988	23/08/2011	DENSE FIBROSIS			
-455	4039	-	13/02/2012	NEGATIVE FOR MALIGNANCY			
-456	4016	7455946	05/04/2013	lesion resolved			
-457	4017	7101654	09/04/2012	Right breast,  biopsy: FIBROADENOMATOID CHANGES WITH COLUMNAR CELL  chANGES, USUAL DUCTAL HYPERPLASIA AND CALCIFICATIONS; SCLEROSING ADENOSIS; 			
-458	4018	-	13/12/2013	"     Part A - Left breast biopsy, left upper outer quadrant:  - DENSE FIBROSIS    -COLUMNAR CELL CHANGE WITH MICROCALCIFICATIONS"	"     Part B - Left breast biopsy, left upper inner breast:   - DENSE FIBROSIS AND FOCAL SCLEROSING ADENOSIS WITH FOCAL     CALCIFICATION"		
-459	4020	7048560	07/02/2012	IDC			
-460	997	7029375	20/01/2012	ALH			
-461	4023	7054912	21/02/2012	IDC			
-462	4023	7257079	18/09/2012	benign-intrammary lymph node			
-463	4040	-	03/01/2012	benign			
-464	4040	7085105	03/07/2012	benign			
-465	4041	7016256	09/01/2012	benign			
-466	4044	7079659	13/03/2012	benign			
-467	4045	-	23/04/2012	 FIBROADENOMA			
-468	3078	-	02/03/2009	LCIS			
-469	3076	-	07/03/2012	DCIS			
-470	3070	7123553	30/04/2012	LCIS			
-471	3065		03/02/2012	ADENOSIS AND COLUMNAR CELL HYPERPLASIA			
-472	3062		28/03/2012	benign			
-473	3055	7086844	16/03/2012	IDC			
-474	3055	7801821	04/04/2014	"     Part A - Right breast MRI VAB, (Upper Inner) medial:  -          COLUMNAR CELL CHANGE  -     PSEUDOANGIOMATOUS STROMAL HYPERPLASIA"	"     Part B - Right breast MRI VAB, (Upper Outer) lateral:   -          COLUMNAR CELL CHANGE    -     PSEUDOANGIOMATOUS STROMAL HYPERPLASIA"		
-475	3053	-	23/04/2013	IDC			
-476	3053	-	17/02/2012	     -FOCAL COLUMNAR CELL CHANGE WITH MICROCALCIFICATIONS			
-477	3052	7158324	26/06/2012	fibroadenoma			
-478	3046	-	22/01/2013	benign-fibroadenoma			
-479	3046	-	10/12/2013	benign-fibroadenoma			
-480	3027		14/03/2013	DCIS			
-#####	Nikita's list	(2012-2013)				
-481	7181	4870076	22/01/2009	left IDC 		
-482	6223	7043947	02/02/2012	left breast wire localization: IDC		
-483	7178	7074874	03/03/2012	IDC		
-484	7182	7061292	28/02/2012	left breast metastatic ductal carcinoma with lobular features		
-485	6224	4559525	09/06/2008	non proliferative fibrocystic changes 		
-486	3005	4974097	19/06/2009	right breast benign with proliferative fibrocyctic changes and calcifications 		
-487	3005	6757337	04/04/2012	right DCIS 		
-488	6226	6718391	09/08/2011	left benign breast tissue 		
-489	7183	7404761	21/12/2013	right non proliferative fibrocyctic changes, columnar cell change and PASH 		
-490	7184	7420191	05/04/2013	left IDC 		
-491	7186	5263507	30/04/2010	left IDC 		
-492	6233	7047121	05/02/2012	right fibroadenoma 		
-493	135	7777131	17/05/2014	right benign breast parenchyma 		
-494	7189	7068978	28/02/2012	left fibroadenoma 		
-495	7190	7013378	10/01/2012	right columnar cell change with hyperplasia 		
-496	7192	7974056	02/11/2014	right breast benign		
-497	7193	7347138	09/03/2013	left benign breast tissue 		
-498	7199	7709063	22/03/2014	right fibroadenoma 		
-499	463	7626269	14/01/2014	right benign 		
-500	7201	5041620	11/08/2009	right benign fibroadenoma 		
-501	7220	7288789	11/01/2013	right benign breast parenchyma 		
-502	7214	7267497	30/01/2013	left benign fat necrosis 		
-503	510	7662547	22/04/2014	right benign 		
-#####	From 2011-2012 					
-504	6100	6722170	07/03/2011	IDC and DCIS right breast 		
-505	6101	5087078	26/10/2009	Fibrocystic changes 		
-506	6101	6828417	15/11/2011	Low grade DCIS 		
-507	6105	5069712	12/09/2009	DCIS 		
-508	924	7532614	26/06/2013	BENIGN BREAST PARENCHYMA WITH FIBROADENOMATOID CHANGES AND ADENOSIS		
-509	6114	5148523	10/12/2009	benign 		
-510	6114	6737175	09/02/2012	fibroadenoma		
-511	6117	5154282	04/05/2010	benign 		
-512	6128	4785750	02/11/2008	BENIGN BREAST TISSUE SHOWING COLUMNAR CELL CHANGES.		
-513	595	7441706	30/03/2013	BENIGN BREAST PARENCHYMA WITH CHANGES OF PRIOR SURGICAL PROCEDURE		
-514	6141	7044114	05/05/2012	fibroadenoma 		
-515	710	6798490	31/05/2011	benign 		
-516	6148	3512706	05/10/2004	IDC 		
-517	6148	7446343	25/05/2013	benign 		
-518	6150	7128025	08/05/2012	BREAST TISSUE WITH COLUMNAR CELL CHANGES AND FOCI OF USUAL DUCTAL		
-519	6069	7581124	29/10/2013	benign 		
-520	7159	5435020	11/11/2010	ILC 		
-521	6164	6971531	24/04/2012	benign breast tissue 		
-522	944	7742881	23/05/2014	ADH and DCIS 		
-523	6174	7009629	05/05/2012	ADH		
-524	7165	5021830	09/01/2010	benign 		
-
-
 DONE
+#####################################################################################################
 #### Sharmila's list	(2012-2013)	
+#####	Nikita's list	(2012-2013)	###	From 2011-2012 					
 ### id	CAD study #	Accession #	Date of Exam	Pathology Diagnosis 
 411	3004	7691918	16/02/2014	left rare calcifications and fibrocystic changes 			
 412	7053	7956343	13/10/2014	lesion resolved 
@@ -107,22 +13,166 @@ DONE
 418	7105	7837892	25/10/2014	IDC			
 419	4049	7009602	05/01/2012	IDC			
 420	3028	6991592	12/12/2011	left columnar cell hyperplasia 
-421	3030	7642998	18/01/2014	right benign breast tissue 			
+421	3030	7642998	18/01/2014	right benign breast tissue 		
 422	3039	6894870	29/08/2011	left usual ductal hyperplasia 
-423	3035	7002031	06/01/2012	right fibroadenoma, columnar cell change 			
+423	3035	7002031	06/01/2012	right fibroadenoma, columnar cell change 		
 424	3035	7145247	28/08/2012	left benign breast tissue 	
 425	3046	7682447	27/11/2013	right fibroepithelial lesion with cellular stroma 			
+426	3045	7149704	24/10/2012	left benign breast parenchyma with adenosis 	   
+427	3053	7041483	31/01/2012	left benign breast parenchyma with columnar cell change 	
+428	3053	7449310	07/04/2013	right IDC and calcifications 			
+429	3055	7742700	25/03/2014	right columnar cell change and PASH 	(Upper Inner) medial:
+430	3055	7060620	07/03/2012	left IDC 	
+431	3055	7742700	25/03/2014	right columnar cell change and PASH 	(Upper Outer) lateral:
+432	2042	4964619	28/05/2009	ADH			
+433	3092	4462310   	17/09/2007	benign-PERILOBULAR LYMPHOCYTIC MASTITIS			
+434     616	7910718      15/11/2014	DCIS
+435	3093	7438787	15/03/2014	benign		
+436	2042	5186978	11/02/2010	IDC			
+437	3083	5345062	12/08/2010	BENIGN BREAST TISSUE
+438	3086	7715466	23/03/2014	benign	
+439	3082	5355166	19/08/2010	A: Right breast MR VAB Site 1: superior - upper inner posterior - 3 mm (image 53)- FIBROADENOMA     - PROLIFERATIVE FIBROCYSTIC CHANGES"	"     
+440	3082	5355166	19/08/2010	B: Right breast MR VAB Site 2: inferior - central inferior - 5 mm (image 56), plateauing enhancement over time.   - PROLIFERATIVE FIBROCYSTIC CHANGE"		
+441	4003	7056445	08/02/2012	" Part A - Right breast posterior inferior mass, core biopsy: RADIAL SCAR WITH FLORID DUCTAL HYPERPLASIA     - DENSE FIBROSIS AND FIBROADENOMATOID CHANGE     - SCLEROSING ADENOSIS AND MICROCALCIFICATIONS"	"        
+442	4003	7056445	08/02/2012	"  Part B - Right breast retroareolar non mass, core biopsy:     -DENSE FIBROSIS AND FIBROADENOMA     -USUAL DUCTAL HYPERPLASIA     -BIOPSY SITE REACTION"	
+443	3033	7102986	07/08/2012	left benign breast tissue 			# only foci not mass/nonmass  
+444	4008	7014565	03/01/2012	Part A - Right breast core biopsies: FLAT EPITHELIAL ATYPIA AND ATYPICAL DUCTAL HYPERPLASIA	
+445	4008	7014565	03/01/2012     Part B - Left breast core biopsies: PROLIFERATIVE FIBROCYSTIC CHANGES COLUMNAR CELL CHANGES AND HYPERPLASIA.
+446	4025	7029301	17/01/2012	Right chest wall biopsy ( mastectomy site): -RECURRENT INVASIVE DUCTAL CARCINOMA, MICROPAPILLARY TYPE			
+447	954	7962026	11/11/2014	MINUTE FOCUS OF ATYPICAL LOBULAR HYPERPLASIA; COLUMNAR CELL CHANGE; FOCAL USUAL DUCTAL HYPERPLASIA			
+448	4026	6998219	24/01/2012	     Left breast, core biopsy: RADIAL SCAR; ATYPICAL DUCTAL HYPERPLASIA			
+449	4029	7633460	11/01/2014	 LOBULAR CARCINOMA IN SITU	
+450	4029	7633460	11/01/2014	 LOBULAR CARCINOMA IN SITU			
+451	4039	7041331	29/01/2012	NEGATIVE FOR MALIGNANCY	
+452	3052	7100200	31/03/2012	left STROMAL FIBROSIS	# foci finding
+453	4018	6983262	25/11/2011    know right DCIS
+454	4017	6979356	21/02/2012	Right breast,  biopsy: FIBROADENOMATOID CHANGES WITH COLUMNAR CELL  chANGES, USUAL DUCTAL HYPERPLASIA AND CALCIFICATIONS; SCLEROSING ADENOSIS; 			
+455	4017	6979356	21/02/2012	Right breast,  biopsy: FIBROADENOMATOID CHANGES WITH COLUMNAR CELL  chANGES, USUAL DUCTAL HYPERPLASIA AND CALCIFICATIONS; SCLEROSING ADENOSIS; 			
+456	4020	6988975	29/11/2011	INVASIVE LOBULAR CARCINOMA			
+457	997	7279207	13/11/2012	 ATYPICAL LOBULAR HYPERPLASIA			
+458	4023	7152678	21/08/2012	BENIGN INTRAMAMMARY LYMPH NODE			
+459	4040	7085105	03/07/2012	FIBROADENOMA	
+460	4041	7003893	20-12/2011	benign			
+461	4044	7066571	26/02/2012	 Part B - Left breast, core biopsy (site A):  - FIBROEPITHELIAL LESION WITH FOCAL CELLULAR STROMA	
+462	4044	7066571	26/02/2012	 Part C - Left breast, core biopsy (site B):- BENIGN BREAST TISSUE WITH FOCAL FIBROADENOMATOID CHANGE   2.0 cm lobulated mass upper inner left breast with heterogenous T2 signal and persistent enhancement, posterior third (image 27). No documented sonographic correlate. Suggest second look ultrasound. If no suspicious sonographic findings, suggest 6
+463	4044	7066571	26/02/2012     Part A - Right breast, core biopsy:     - FIBROADENOMA WITH HYALINIZED STROMA
+464	3078	4836946	14/02/2009	LCIS			
+465	4045	7092118	30/03/2012	 FIBROADENOMA	
+466	3076	7053450	15/02/2012	DCIS	
+467	3070	7085188	04/04/2012	LCIS	(left)
+468	3065	7037223	29/01/2012	ADENOSIS AND COLUMNAR CELL HYPERPLASIA	
+469	3070	7085188	04/04/2012     DUCTAL HYPERPLASIA (right) 
+470	3055	7742700	25/03/2014	Part A - Right breast MRI VAB, (Upper Inner) medial:  - COLUMNAR CELL CHANGE  -     PSEUDOANGIOMATOUS STROMAL HYPERPLASIA"	"    
+471	3055	7742700	25/03/2014	 Part B - Right breast MRI VAB, (Upper Outer) lateral:   - COLUMNAR CELL CHANGE    -     PSEUDOANGIOMATOUS STROMAL HYPERPLASIA"		
+472	3055	7060620	07/03/2012	IDC	
+473	3053	7041483	31/01/2012	     -FOCAL COLUMNAR CELL CHANGE WITH MICROCALCIFICATIONS			
+474	3053	7449310	07/04/2013	IDC			
+475	3065	7037223	29/01/2012	ADENOSIS AND COLUMNAR CELL HYPERPLASIA		
+476	3052	7100200	31/03/2012	fibroadenoma			
+477	3046	7289130	22/12/2012	benign-fibroadenoma	
+479	6223	7043947	02/02/2012	Part A - Right breast lumpectomy (mass inferior): - INVASIVE DUCTAL CARCINOMA, MICROPAPILLARY TYPE		
+480	7178	7074874	03/03/2012	IDC		
+481	6224	4559525	09/06/2008	non proliferative fibrocystic changes 		
+482	7182	7061292	28/02/2012	left breast metastatic ductal carcinoma with lobular features		
+483	3005	4974097	19/06/2009	right breast benign with proliferative fibrocyctic changes and calcifications 		
+484	3005	6757337	04/04/2012	right DCIS 		
+485	6226	6718391	09/08/2011	left benign breast tissue 		
+486	7183	7404761	21/12/2013	right non proliferative fibrocyctic changes, columnar cell change and PASH 		
+487	7184	7420191	05/04/2013	left IDC 		
+488	7186	5263507	30/04/2010	left IDC 		
+489	6233	7047121	05/02/2012	right fibroadenoma 		
+490	7189	7068978	28/02/2012	left benign 
+491	7189	7068978	28/02/2012	- BENIGN BREAST TISSUE
+492	135	7777131	17/05/2014	Fibrocystic	
+493	7192	7974056	02/11/2014	right breast benign		
+494	7190	7013378	10/01/2012	right columnar cell change with hyperplasia 		
+495	7199	7709063	22/03/2014	right fibroadenoma 		
+496	7193	7347138	09/03/2013	left benign breast tissue 		
+497	7193	7347138	09/03/2013	left benign breast tissue 		
+498	463	7626269	14/01/2014	right FLORID HYPERPLASIA 		
+499	7201	5041620	11/08/2009	right benign fibroadenoma 		
+500	7220	7288789	11/01/2013	right  BENIGN BREAST PARENCHYMA WIH FIBROCYSTIC CHANGES (cyst formation, 		
+501	510	7662547	22/04/2014	right Part A - Breast, right, (Lesion 1 superior), MRI-guided vacuum-assisted core, needle biopsy: 1. BENIGN BREAST PARENCHYMA WITH PSEUDOANGIOMATOUS STROMAL HYPERPLASIA (PASH) AND COLUMNAR CELL CHANGES (see comment) 		
+502	510	7662547	22/04/2014	right Part B - Breast, right, (lesion 2 inferior), MRI-guided vacuum-assisted core, needle biopsy: 1. BENIGN BREAST PARENCHYMA WITH PSEUDOANGIOMATOUS STROMAL HYPERPLASIA (PASH) AND COLUMNAR CELL CHANGES (see comment)
+503	6101	5087078	26/10/2009	Fibrocystic changes 		
+504	6101	7709238	07/01/2014	INVASIVE DUCT CARCINOMA NOS
+505	6100	6722170	07/03/2011	Part A - Right breast core biopsy, at 12 o'clock  site A: - INVASIVE DUCTAL CARCINOMA, NOS	
+506	6105	5069712	12/09/2009	DCIS 		
+507	924	7532614	26/06/2013	Part A - Left breast MRI VAB biopsy: 1. BENIGN BREAST PARENCHYMA WITH FIBROADENOMATOID CHANGES AND ADENOSIS		
+508	924	7532614	26/06/2013	Part B - Right breast MRI VAB biopsy: 1. BENIGN BREAST PARENCHYMA WITH FIBROADENOMATOID CHANGES AND ADENOSIS
+509	6114	6737175	09/02/2012	fibroadenoma		
+510	6114	5148523	10/12/2009	benign 		
+511	6117	5154282	04/05/2010	Fibroadenoma 		
+512	6141	7044114	05/05/2012	fibroadenoma 		
+513	595	7441706	30/03/2013	Right breast, vacuum assisted core biopsy:1. BENIGN BREAST PARENCHYMA WITH CHANGES OF PRIOR SURGICAL PROCEDURE	
+514	6148	7446343	25/05/2013	SCLEROSING ADENOSIS 		
+515	6150	7128025	08/05/2012	BREAST TISSUE WITH COLUMNAR CELL CHANGES AND FOCI OF USUAL DUCTAL		
+516	7159	5435020	11/11/2010	ILC 		
+517	6069	7581124	29/10/2013	benign 		
+518	6069	7581124	29/10/2013	benign 		
+519	6164	6971531	24/04/2012	benign breast tissue 		
+520	944	7092128	17/04/2012	BENIGN BREAST TISSUE
+521	6174	7009629	05/05/2012	ADH		
+522	7165	5021830	09/01/2010	ADENOSIS AND FIBROADENOMATOID CHANGE		
+523	3026	6830523	23/06/2011	 NON PROLIFERATIVE FIBROCYSTIC		
+524	3018	6865137	27/07/2011	benign-FAT NECROSIS; calcs			
+525     710	6798490	31/05/2011	 FOCAL DUCTAL HYPERPLASIA 		updated-cystic mass	
+526     3097	6909883	03/01/2012     ATYPICAL DUCTAL HYPERPLASIA
 
 
-### removed
-413	3000	4546854	04/01/2008	lobular invasive 		NOTE: only up to Ph3/post-contrast
-416	3018	6865137	12/09/2011	benign-FAT NECROSIS; calcs			# no pathology and no previous
-418	3033	7102986	07/08/2012	left benign breast tissue 			# only foci not mass/nonmass
-420	3039	3628156	22/02/2005	left fibrocystic changes                # NOT FOUND IN AS0SUNB			
-420	3026	7313078	23/02/2013	 NON PROLIFERATIVE FIBROCYSTIC		# ambiguous finding not mass/nonmass	
-423	3045	6885313	03/10/2011	benign-breast tissue	# check for thickenning finding,, not mass/nonmass but biopsied by VAB MRI
-425	3045	7149704	24/10/2012	left benign breast parenchyma with adenosis 	   # nOT FOUDN AS0SUNB		
-426	3052	7100200	31/03/2012	left stromal fibrosis 	# foci finding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# exluded
+#####################################################################################################
+3000	4546854	04/01/2008	lobular invasive 		NOTE: only up to Ph3/post-contrast
+4032	6884401	14/08/2011	Part A - Right breast biopsy posterior : DENSE FIBROSIS	# inf dynfeatures			 
+4032	6884401	14/08/2011	Part A - Right breast biopsy posterior : DENSE FIBROSIS     # inf dynfeatures
+7214	7267497	30/01/2013	left benign fat necrosis 	  # could not segment enhancement	
+6100	6722170	07/03/2011	Part B - Right breast core biopsy, 6 o'clocksite B: - DUCTAL CARCINOMA IN SITU  # could not segment enhancement	
+6128	4785750	02/11/2008	BENIGN BREAST TISSUE SHOWING COLUMNAR CELL CHANGES.		# could not segment lesion
+3045	6885313	19/08/2011	benign-breast tissue	# check for thickenning finding,, not mass/nonmass/foci
+3062	7054872	29/02/2012	 DENSE FIBROSIS         # inf dynfeatures		
+
+
+# exluded - for shar
+###############
+4018	6983262	25/11/2011    Part B - Left breast biopsy, left upper inner breast:   - DENSE FIBROSIS AND FOCAL SCLEROSING ADENOSIS WITH FOCAL     CALCIFICATION"		# calcifications biopsied on left breast not seen in MRI
+3027	7652412	23/03/2014	DCIS	# No procedure done within 3 months from imaging
+944	7742881	23/05/2014	ADH and DCIS  # missing finding in biomatrix. In the right upper inner quadrant image 73 there is a new heterogeneously enhancing 5 mm mass with rapid early and delayed washout with an isointense T2 signal.
+
+
+
 
 # not found in AS0SUN
+#####################################################################################################
+3039	3628156	22/02/2005	left fibrocystic changes                # NOT FOUND IN AS0SUNB			
+3082	7080675	20/03/2012	PROLIFERATIVE FIBROCYSTIC CHANGES       # NOT FOUND IN AS0SUNB	
+6148	3512706	05/10/2004	 C.  Left breast lump:  INFILTRATING DUCT CARCINOMA NOS		# no assession in AS0SUNB
+2042	4861891	23/01/2009	ATYPICAL LOBULAR HYPERPLASIA                    
 
+
+# not entered in BIOMATRIX yet
+#####################################################################################################
+616	8026103	21/11/2014	DCISmicro	
+3092	4473234	28/09/2007	right  - BREAST TISSUE WITH FOCAL STROMAL FIBROSIS AND MILD PERILOBULAR CHRONIC INFLAMMATION.	
+3097	7024601	16/01/2012	ADH			
+4016	7455946	05/04/2013	lesion resolved			
+
+
+
+# weird T2 for phillip
+#####################################################################################################
+451	4039	7041331	29/01/2012	NEGATIVE FOR MALIGNANCY	

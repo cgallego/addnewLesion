@@ -97,15 +97,21 @@ if __name__ == '__main__':
         lesion_id = int(fileline[0] )
         StudyID = fileline[1] 
         PatientID = fileline[2]  
-        procdateID = fileline[3]
+        dateID = fileline[3]
         Diagnosis = fileline[5:]
-        print procdateID
+        
+        #############################
+        print "\n Adding record radiology"
+        SendNew2DB = SendNew()
+        radioinfo = SendNew2DB.queryRadioData(StudyID, dateID)
+        radioinfo = radioinfo.iloc[0]
+            
+        SendNew2DB.addRecordDB_radiology(lesion_id, radioinfo)
         
         #############################
         ###### 1) Querying Research database for clinical, pathology, radiology data
         #############################
-        SendNew2DB = SendNew()
-        [img_folder, cond, BenignNMaligNAnt, Diagnosis, rowCase] = SendNew2DB.queryNewDatabase(StudyID, procdateID, Diagnosis)        
+        [img_folder, cond, BenignNMaligNAnt, Diagnosis, rowCase] = SendNew2DB.queryNewDatabase(StudyID, dateID, Diagnosis)        
         
         AccessionN = SendNew2DB.casesFrame['exam.a_number_txt'].iloc[0]
         DicomExamNumber = SendNew2DB.casesFrame['exam.exam_img_dicom_txt'].iloc[0]
@@ -123,9 +129,9 @@ if __name__ == '__main__':
             ## for old DicomExamNumber         
             nameSegment = StudyID+'_'+AccessionN+'_'+str(fileline[4])+'.vtk'
         else:
-            nameSegment = StudyID+'_'+AccessionN+'_'+'lesion.vtk'
-            
-                    
+            nameSegment = StudyID+'_'+AccessionN+'_'+'lesion.vtk'      
+
+                   
         #############################
         ###### 2) Get Scans from pacs
         #############################
@@ -152,10 +158,8 @@ if __name__ == '__main__':
         #############################
         ###### 3) Get T2 info
         #############################
-        img_folder = 'Z:/Cristina/MassNonmass/mass/'
         T2SeriesID='NONE'
         [path_T2Series, T2SeriesID] = SendNew2DB.processT2(T2SeriesID, img_folder, StudyID, DicomExamNumber)
-        
         
         #############################
         # 4) Extract Lesion and Muscle Major pectoralies signal                                   
@@ -169,7 +173,7 @@ if __name__ == '__main__':
         
         #############################
         ###### 5) Extract Morphology features
-        #############################
+        ############################# 
         morphofeatures = SendNew2DB.extract_morph(series_path, phases_series, SendNew2DB.lesion3D)
         
         #############################        
