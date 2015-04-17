@@ -85,7 +85,7 @@ class SendNew(object):
                 ############# if by examDate
                 # Format query reprocdateID
                 redateID = datetime.date(int(dateID[6:10]), int(dateID[3:5]), int(dateID[0:2]))
-                is_mass, colLabelsmass, is_nonmass, colLabelsnonmass = self.queryData.queryDatabase(fStudyID, redateID)    
+                is_mass, colLabelsmass, is_nonmass, colLabelsnonmass, is_foci, colLabelsfoci = self.queryData.queryDatabase(fStudyID, redateID)    
 
         except Exception:
             noproc = True
@@ -108,7 +108,10 @@ class SendNew(object):
         print "\n MASSES:"
         print '\n'.join([str(n) + ": " + str(entry) for (n, entry) in zip(range(0,len(is_mass)), is_mass)])
         print "\n NON-MASSES:"
-        print '\n'.join([str(n) + ": " + str(entry) for (n, entry) in zip(range(0,len(is_mass)), is_nonmass)])  
+        print '\n'.join([str(n) + ": " + str(entry) for (n, entry) in zip(range(0,len(is_nonmass)), is_nonmass)])  
+        print "\n FOCI:"
+        print '\n'.join([str(n) + ": " + str(entry) for (n, entry) in zip(range(0,len(is_foci)), is_foci)])  
+        
         
         ## append collection of cases
         self.casesFrame = pd.DataFrame(columns=self.queryData.d1.columns)
@@ -118,38 +121,63 @@ class SendNew(object):
         
         # ask for info about lesion row data from query
         mass_rowCase = raw_input('pick row for MASS (0-n) or x: ')
-        if (mass_rowCase == 'x'):
-            ## append collection of cases 
-            self.massframe = pd.DataFrame(data=array( ['NA'] * 10))
-            self.massframe = self.massframe.transpose()
-            self.massframe.columns = ['finding.side_int','finding.size_x_double','finding.size_y_double','finding.size_z_double','finding.mri_dce_init_enh_int','finding.mri_dce_delay_enh_int','finding.curve_int','finding.mri_nonmass_dist_int', 'finding.mri_nonmass_int_enh_int','finding.t2_signal_int']
-            img_folder = 'Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'nonmass'
-            print  img_folder
-            cond = 'nonmass'
-            self.casesFrame['finding.mri_nonmass_yn'] = True
-            self.casesFrame['finding.mri_mass_yn'] = False
-        else:
-            self.massframe = pd.DataFrame(data=array( is_mass[int(mass_rowCase)] ))
-            self.massframe = self.massframe.transpose()
-            self.massframe.columns = list(colLabelsmass)
-            self.dataCase = self.massframe 
-                              
         nonmass_rowCase = raw_input('pick row for NONMASS (0-n) or x: ')
-        if (nonmass_rowCase == 'x'):
+        foci_rowCase = raw_input('pick row for FOCI (0-n) or x: ')
+        
+        # Decide for mass    
+        if (nonmass_rowCase == 'x' and foci_rowCase == 'x'):
             ## append collection of cases 
-            self.nonmassframe = pd.DataFrame(data=array( ['NA'] * 10))
-            self.nonmassframe = self.nonmassframe.transpose()
-            self.nonmassframe.columns = ['finding.side_int','finding.size_x_double','finding.size_y_double','finding.size_z_double','finding.mri_dce_init_enh_int','finding.mri_dce_delay_enh_int','finding.curve_int','finding.mri_nonmass_dist_int', 'finding.mri_nonmass_int_enh_int','finding.t2_signal_int']
+            self.frame = pd.DataFrame(data=array( ['NA'] * 10))
+            self.frame = self.frame.transpose()
+            self.frame.columns = ["finding.side_int", "finding.size_x_double", "finding.size_y_double", "finding.size_z_double", "finding.mri_dce_init_enh_int", "finding.mri_dce_delay_enh_int", "finding.curve_int", "finding.mri_mass_margin_int", "finding.mammo_n_mri_mass_shape_int", "finding.t2_signal_int"]
             img_folder = 'Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'mass'
             print  img_folder
             cond = 'mass'
             self.casesFrame['finding.mri_mass_yn'] = True
             self.casesFrame['finding.mri_nonmass_yn'] = False
-        else:
-            self.nonmassframe = pd.DataFrame(data=array( is_nonmass[int(nonmass_rowCase)] ))
-            self.nonmassframe = self.nonmassframe.transpose()
-            self.nonmassframe.columns = list(colLabelsnonmass)
-            self.dataCase = self.nonmassframe 
+            self.casesFrame['finding.mri_foci_yn'] = False           
+            # create mass
+            self.frame = pd.DataFrame(data=array( is_mass[int(mass_rowCase)] ))
+            self.frame = self.frame.transpose()
+            self.frame.columns = list(colLabelsmass)
+            self.dataCase = self.frame
+        
+        # Decide for non-mass
+        if (mass_rowCase == 'x' and foci_rowCase == 'x'):
+            ## append collection of cases 
+            self.frame = pd.DataFrame(data=array( ['NA'] * 10))
+            self.frame = self.frame.transpose()
+            self.frame.columns = ['finding.side_int','finding.size_x_double','finding.size_y_double','finding.size_z_double','finding.mri_dce_init_enh_int','finding.mri_dce_delay_enh_int','finding.curve_int','finding.mri_nonmass_dist_int', 'finding.mri_nonmass_int_enh_int','finding.t2_signal_int']
+            img_folder = 'Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'nonmass'
+            print  img_folder
+            cond = 'nonmass'
+            self.casesFrame['finding.mri_nonmass_yn'] = True
+            self.casesFrame['finding.mri_mass_yn'] = False
+            self.casesFrame['finding.mri_foci_yn'] = False
+            # create nonmass
+            self.frame = pd.DataFrame(data=array( is_nonmass[int(nonmass_rowCase)] ))
+            self.frame = self.frame.transpose()
+            self.frame.columns = list(colLabelsnonmass)
+            self.dataCase = self.frame 
+            
+        # Decide for ficu
+        if (mass_rowCase == 'x' and nonmass_rowCase == 'x'):
+            ## append collection of cases 
+            self.frame = pd.DataFrame(data=array( ['NA'] * 9))
+            self.frame = self.frame.transpose()
+            self.frame.columns = ["finding.side_int", "finding.size_x_double", "finding.size_y_double", "finding.size_z_double", "finding.mri_dce_init_enh_int", "finding.mri_dce_delay_enh_int", "finding.curve_int", "finding.mri_foci_distr_int", "finding.t2_signal_int"]
+            img_folder = 'Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'foci'
+            print  img_folder
+            cond = 'foci'
+            self.casesFrame['finding.mri_nonmass_yn'] = False
+            self.casesFrame['finding.mri_mass_yn'] = False
+            self.casesFrame['finding.mri_foci_yn'] = True
+            # create nonmass
+            self.frame = pd.DataFrame(data=array( is_foci[int(foci_rowCase)] ))
+            self.frame = self.frame.transpose()
+            self.frame.columns = list(colLabelsfoci)
+            self.dataCase = self.frame             
+            
         
         BenignNMaligNAnt = raw_input('BenignNMaligNAnt (B or M): ')
         Diagnosis = raw_input('Diagnosis ?: ')
@@ -448,13 +476,13 @@ class SendNew(object):
         print "\n Adding record case to DB..."
         if 'proc.pt_procedure_id' in casesFrame.keys():
             self.newrecords.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
-                           str(casesFrame['cad.latest_mutation']), casesFrame['finding.mri_mass_yn'], casesFrame['finding.mri_nonmass_yn'], finding_side, str(casesFrame['proc.pt_procedure_id']), 
+                           str(casesFrame['cad.latest_mutation']), casesFrame['finding.mri_mass_yn'], casesFrame['finding.mri_nonmass_yn'], casesFrame['finding.mri_foci_yn'], finding_side, str(casesFrame['proc.pt_procedure_id']), 
                             casesFrame['proc.proc_dt_datetime'], str(casesFrame['proc.proc_side_int']), str(casesFrame['proc.proc_source_int']),  str(casesFrame['proc.proc_guid_int']), 
                             str(casesFrame['proc.proc_tp_int']), str(casesFrame['exam.comment_txt']), str(casesFrame['proc.original_report_txt']), str(dataCase['finding.curve_int']), str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), str(cond)+str(BenignNMaligNAnt),  Diagnosis)
         
         if not 'proc.pt_procedure_id' in casesFrame.keys():
             self.newrecords.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
-                           str(casesFrame['cad.latest_mutation']), casesFrame['finding.mri_mass_yn'], casesFrame['finding.mri_nonmass_yn'], finding_side, 'NA', 
+                           str(casesFrame['cad.latest_mutation']), casesFrame['finding.mri_mass_yn'], casesFrame['finding.mri_nonmass_yn'], casesFrame['finding.mri_foci_yn'], finding_side, 'NA', 
                             datetime.date(9999, 12, 31), 'NA', 'NA', 'NA', 'NA', str(casesFrame['exam.comment_txt']), 'NA', str(dataCase['finding.curve_int']), str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), cond+BenignNMaligNAnt,  Diagnosis)
                             
         if "mass" == cond:
@@ -463,6 +491,10 @@ class SendNew(object):
         if "nonmass" == cond: 
             self.newrecords.nonmass_2DB(lesion_id, str(BenignNMaligNAnt), SeriesID, T2SeriesID, dataCase['finding.mri_nonmass_dist_int'], dataCase['finding.mri_nonmass_int_enh_int'])
         
+        if "foci" == cond: 
+            self.newrecords.foci_2DB(lesion_id, str(BenignNMaligNAnt), SeriesID, T2SeriesID, dataCase['finding.mri_foci_distr_int'])
+       
+       
         return
         
         

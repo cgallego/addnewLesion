@@ -1,3 +1,263 @@
+537	320	3901468	20/01/2006	Malignant emale					
+				
+
+
+
+
+
+
+562	320	3944835	16/02/2006	Malignant emale					
+563	323	2704388	09/01/2002	Malignant emale					
+564	334	3624235	11/02/2005	Benign by pathology emale					
+565	339	3984239	05/04/2006	Benign by pathology emale					
+566	346	2785191	23/04/2002	Malignant emale					
+567	347	2778566	15/04/2002	Malignant emale					
+568	347	2788355	26/04/2002	Malignant emale					
+569	352	3107122	20/06/2003	Benign by pathology emale					
+570	352	4785776	19/01/2009	Benign by pathology emale					
+571	355	3968223	10/03/2006	Benign by pathology emale					
+572	357	5137030	15/12/2009	Benign by pathology emale					
+573	358	2971202	17/12/2002	Malignant emale					
+574	363	3078370	15/05/2003	Benign by pathology emale					
+575	363	3093823	04/06/2003	Benign by pathology emale					
+576	366	3787337	09/09/2005	Malignant emale					
+577	376	2911484	07/10/2002	Benign by pathology emale					
+578	383	3147393	22/08/2003	Malignant emale					
+579	383	3147393	22/08/2003	Malignant emale					
+580	384	3014835	12/02/2003	Benign by pathology emale					
+581	388	7395410	26/02/2013	Malignant emale					
+582	393	4527343	05/12/2007	Benign by pathology emale					
+583	396	2944196	14/11/2002	Malignant emale					
+584	396	3128568	16/07/2003	Benign by pathology emale					
+585	400	4885547	26/02/2009	Benign by pathology emale					
+586	400	4907064	17/03/2009	Benign by pathology emale					
+587	407	3380787	04/05/2004	Benign by pathology emale					
+588	409	6696680	24/04/2011	Benign by pathology emale					
+589	415	4016387	23/05/2006	Malignant emale					
+590	422	6989690	14/04/2012	Benign by pathology emale					
+591	424	3652975	17/03/2005	Benign by pathology emale					
+592	426	6952324	01/11/2011	Benign by pathology emale					
+593	427	4102461	09/08/2006	Benign by pathology emale					
+594	427	4102462	15/08/2006	Benign by pathology emale					
+595	428	3722082	16/06/2005	Benign by pathology emale					
+596	436	3073833	09/05/2003	Benign by pathology emale					
+597	438	3239360	27/11/2003	Malignant emale					
+598	440	5098312	23/05/2010	Benign by pathology emale					
+599	442	4936886	13/03/2010	Benign by pathology emale					
+600	454	4478633	03/10/2007	Benign by pathology emale					
+601	456	4480220	21/11/2007	Benign by pathology emale					
+602	460	3726278	17/06/2005	Benign by pathology emale					
+603	469	3888207	15/12/2005	Benign by pathology emale					
+604	476	3608493	10/02/2005	Benign by pathology emale					
+605	483	3331258	11/03/2004	Benign by pathology emale					
+606	483	4906750	23/03/2009	Benign by pathology emale					
+607	514	4458496	28/09/2007	Benign by pathology emale					
+608	522	3636420	16/03/2005	Benign by pathology emale					
+609	522	4553037	07/01/2008	 emale					
+610	529	4906721	26/03/2009	Benign by pathology emale					
+611	533	4906729	27/03/2009	Benign by pathology emale					
+612	537	3980081	30/03/2006	Benign by pathology emale					
+613	542	4522254	22/11/2007	Benign by pathology emale					
+614	560	4325688	28/05/2007	Benign by pathology emale					
+615	560	4376884	31/05/2007	Benign by pathology emale					
+616	561	4668611	30/05/2008	Benign by pathology emale					
+617	562	3984242	06/04/2006	Malignant emale					
+618	562	4013521	02/05/2006	Malignant emale					
+619	566	4956717	29/05/2009	Benign by pathology emale					
+620	567	4096881	29/08/2006	Benign by pathology emale					
+621	567	4125034	31/08/2006	Benign by pathology emale					
+622	571	4902166	30/08/2009	Malignant emale					
+623	584	4911917	24/10/2009	Malignant emale					
+624	584	5119187	10/11/2009	Malignant emale					
+625	586	5332925	24/08/2010	Malignant emale					
+626	591	4999968	18/06/2009	Benign by pathology emale					
+627	592	4263883	05/02/2007	NA emale					
+628	592	4389875	13/06/2007	Benign by pathology emale					
+629	599	4284704	23/02/2007	Benign by pathology emale					
+630	603	4593568	06/03/2008	Benign by pathology emale					
+631	604	4593492	12/03/2008	Malignant emale					
+632	608	5094101	27/06/2010	Benign by pathology emale					
+633	613	4681594	15/07/2008	Malignant emale					
+634	613	4718085	14/08/2008	Malignant emale					
+635	619	4435136	08/08/2007	Benign by pathology emale					
+636	619	7250777	09/04/2013	Malignant emale					
+637	642	4928868	04/05/2009	Benign by pathology emale					
+638	645	4593500	14/03/2008	Benign by pathology emale					
+639	665	4880497	17/02/2009	Benign by pathology emale					
+640	685	6700995	12/07/2011	NA emale					
+641	687	4678937	22/06/2008	Malignant emale					
+642	692	5199366	11/02/2010	Benign by pathology emale					
+643	719	3946608	23/02/2006	Malignant emale					
+644	720	4965525	29/05/2009	Benign by pathology emale					
+645	720	4958334	23/05/2009	Benign by pathology emale					
+646	729	4582921	21/02/2008	Benign by pathology emale					
+647	732	4994955	18/06/2009	Benign by pathology emale					
+648	740	4842984	22/12/2008	Benign by pathology emale					
+649	743	5229100	16/08/2010	Benign by pathology emale					
+650	743	4827839	06/06/2009	Malignant emale					
+651	800	4977573	29/05/2009	Benign by pathology emale					
+652	840	4632517	10/04/2008	Benign by pathology emale					
+653	844	4795902	27/10/2008	Malignant emale					
+654	851	4939390	30/01/2010	Malignant emale					
+655	858	4667102	29/05/2008	Benign by pathology emale					
+656	875	5396107	14/10/2010	Benign by pathology emale					
+657	876	4719378	18/09/2008	Benign by pathology emale					
+658	885	6747175	31/03/2011	Benign by pathology emale					
+659	896	7624300	20/10/2013	Benign by pathology emale					
+660	897	4662659	06/06/2008	Benign by pathology emale					
+661	898	5224531	07/11/2010	Benign by pathology emale					
+662	900	5226780	26/03/2010	Benign by pathology emale					
+663	904	5191481	06/02/2010	Benign by pathology emale					
+664	922	6991622	03/12/2011	Benign by pathology emale					
+665	924	4831379	30/04/2009	Benign by pathology emale					
+666	934	5314924	24/07/2010	Benign by pathology emale					
+667	943	5395204	25/09/2010	Malignant emale					
+668	952	7105222	06/05/2012	Benign by pathology emale					
+669	962	3229689	16/12/2003	Benign by pathology emale					
+670	966	4914942	19/10/2009	Benign by pathology emale					
+671	967	6938015	29/03/2012	Malignant emale					
+672	975	7003392	15/12/2011	Benign by pathology emale					
+673	985	7050619	25/04/2012	Benign by pathology emale					
+674	993	6979299	27/01/2012	Benign by pathology emale					
+675	1004	6801264	29/05/2011	Benign by pathology emale					
+676	1006	4443563	06/09/2007	Benign by pathology emale					
+677	1008	6745959	24/03/2011	Malignant emale					
+678	1018	4773924	17/09/2009	Benign by pathology emale					
+679	1021	6760795	26/08/2011	Benign by pathology emale					
+680	1022	4562271	04/04/2008	Benign by pathology emale					
+681	1024	6980462	20/11/2011	Benign by pathology emale					
+682	1025	6703528	11/02/2011	Benign by pathology emale					
+683	1025	6925149	20/03/2012	Benign by pathology emale					
+684	1026	6907382	26/10/2011	Benign by pathology emale					
+685	1044	7366817	03/03/2013	Malignant emale					
+686	1045	7231265	18/08/2012	Benign by pathology emale					
+687	1054	7268023	20/09/2012	Malignant emale					
+688	1057	7169269	08/06/2012	Benign by pathology emale					
+689	1059	7346997	26/01/2013	Benign by pathology emale					
+690	1062	7408296	19/02/2013	Benign by pathology emale					
+691	1071	7382882	18/01/2013	Malignant emale					
+692	1074	7228441	16/08/2012	Benign by pathology emale					
+693	1079	7417880	24/02/2013	Malignant emale					
+694	1081	7078151	25/07/2012	Benign by pathology emale					
+695	2003	6739382	23/03/2011	Benign by pathology emale					
+696	2007	7366811	20/02/2013	Benign by pathology emale					
+697	2016	7052211	14/02/2012	Benign by pathology emale					
+698	2025	5210614	04/03/2010	Malignant emale					
+699	2049	5458850	09/12/2010	Malignant emale					
+700	3021	7019819	07/01/2012	Benign by pathology emale					
+701	3031	7106716	08/04/2012	Benign by pathology emale					
+702	3033	5016967	10/07/2009	Malignant emale					
+703	3045	6885313	19/08/2011	Benign by pathology emale					
+704	3046	5083651	13/04/2010	Benign by pathology emale					
+705	3054	6714946	18/06/2011	Benign by pathology emale					
+706	3057	7098623	11/04/2012	Benign by pathology emale					
+707	3066	7104690	10/04/2012	Benign by pathology emale					
+708	3077	7042083	31/01/2012	Benign by pathology emale					
+709	3081	7041435	29/01/2012	Benign by pathology emale					
+710	4002	6993690	14/03/2012	Benign by pathology emale					
+711	4011	7212409	09/01/2013	Benign by pathology emale					
+712	4012	7002008	15/03/2012	Benign by pathology emale					
+713	4019	7151338	22/09/2012	Benign by pathology emale					
+714	4052	7249199	04/09/2012	Benign by pathology emale					
+715	4064	7408178	16/03/2013	Malignant emale					
+716	4069	7389797	25/01/2013	Malignant emale					
+717	4072	7010797	21/02/2012	Benign by pathology emale					
+718	4082	4812191	24/11/2009	Benign by pathology emale					
+719	4090	7214609	27/07/2012	Benign by pathology emale					
+720	4092	7446757	06/07/2013	Benign by pathology emale					
+721	4095	7567574	11/08/2013	Benign by pathology emale					
+722	4097	7312908	09/01/2013	Benign by pathology emale					
+723	5001	7434795	13/03/2013	Malignant emale					
+724	5002	5377263	18/11/2010	Malignant emale					
+725	5004	7190587	06/07/2012	Benign by pathology emale					
+726	5007	7506001	10/09/2013	Benign by pathology emale					
+727	5007	7232274	28/08/2012	Benign by pathology emale					
+728	5012	7059575	18/02/2012	Benign by pathology emale					
+729	5029	7447740	24/03/2013	Benign by pathology emale					
+730	5037	7369059	13/01/2013	Benign by pathology emale					
+731	5039	7202972	13/07/2012	Benign by pathology emale					
+732	5043	7269175	23/09/2012	Benign by pathology emale					
+733	5044	7128247	15/05/2012	Benign by pathology emale					
+734	5046	7379441	17/01/2013	Malignant emale					
+735	5049	7403080	12/02/2013	Benign by pathology emale					
+736	5050	7232267	21/08/2012	Benign by pathology emale					
+737	5051	7397042	05/02/2013	Benign by pathology emale					
+738	5063	7362883	27/03/2013	Benign by pathology emale					
+739	5068	7580053	24/08/2013	Benign by pathology emale					
+740	5077	7452833	06/04/2013	Benign by pathology emale					
+741	5097	7201998	23/08/2012	Benign by pathology emale					
+742	5097	7344755	05/03/2013	Benign by pathology emale					
+743	6030	5144407	07/12/2009	Malignant emale					
+744	6033	4983726	13/06/2009	Malignant emale					
+745	6053	5387311	22/10/2010	Benign by pathology emale					
+746	6068	6694453	15/02/2011	Malignant emale					
+747	6071	6704150	07/02/2011	Benign by pathology emale					
+748	6071	6704150	15/03/2011	Benign by pathology emale					
+749	6072	6716378	17/02/2011	Malignant emale					
+750	6073	6726019	14/03/2011	Malignant emale					
+751	6076	6710364	26/03/2011	Benign by pathology emale					
+752	6079	6797177	17/05/2011	Benign by pathology emale					
+753	6084	6730406	13/04/2011	Benign by pathology emale					
+754	6087	6774639	04/05/2011	Benign by pathology emale					
+755	6087	6774639	04/05/2011	Benign by pathology emale					
+756	6090	6768025	26/04/2011	Benign by pathology emale					
+757	6093	6667353	22/05/2011	Benign by pathology emale					
+758	6094	6797254	14/05/2011	Benign by pathology emale					
+759	6095	7026651	23/04/2012	Benign by pathology emale					
+760	6095	7229066	16/10/2012	Benign by pathology emale					
+761	6095	7511435	04/06/2013	Benign by pathology emale					
+762	6096	5199363	20/08/2010	Benign by pathology emale					
+763	6102	7379437	15/05/2013	Benign by pathology emale					
+764	6103	7171822	26/10/2012	Benign by pathology emale					
+765	6110	6807036	11/06/2011	Malignant emale					
+766	6116	4633712	25/04/2008	Malignant emale					
+767	6129	5337971	30/09/2010	Benign by pathology emale					
+768	6129	7164404	28/08/2012	Benign by pathology emale					
+769	6132	6676130	06/03/2011	Benign by pathology emale					
+770	6139	5361764	28/08/2010	Benign by pathology emale					
+771	6140	6724284	04/03/2011	Malignant emale					
+772	6145	6692432	02/02/2011	Malignant emale					
+773	6148	3512706	05/10/2004	Malignant emale					
+774	6165	5383248	28/09/2010	Benign by pathology emale					
+775	6174	5345420	02/10/2010	Benign by pathology emale					
+776	6180	4766881	27/09/2008	Benign by pathology emale					
+777	6183	5180444	22/02/2010	Benign by pathology emale					
+778	6183	4654479	18/05/2008	Benign by pathology emale					
+779	6184	4376301	31/05/2007	Benign by pathology emale					
+780	6202	4343467	30/04/2007	Malignant emale					
+781	6207	4426934	07/06/2008	Malignant emale					
+782	6209	5205910	29/07/2010	Benign by pathology emale					
+783	6211	4632498	19/06/2008	Benign by pathology emale					
+784	6214	5235805	02/09/2010	Benign by pathology emale					
+785	6215	6771763	23/04/2011	Malignant emale					
+786	6217	4412966	02/08/2007	Benign by pathology emale					
+787	6217	5359321	11/01/2011	Benign by pathology emale					
+788	6217	6794662	19/05/2011	Benign by pathology emale					
+789	6218	4722292	26/09/2009	Benign by pathology emale					
+790	6219	4724329	06/06/2009	Benign by pathology emale					
+791	6236	7014549	30/12/2011	Malignant emale					
+792	7002	6736013	16/03/2011	Malignant emale					
+793	7003	6737062	12/03/2011	Benign by pathology emale					
+794	7025	4868451	15/12/2009	Benign by pathology emale					
+795	7033	6710816	15/02/2011	Malignant emale					
+796	7053	6817558	06/09/2011	Benign by pathology emale					
+797	7063	5238036	12/04/2010	Malignant emale					
+798	7068	6989578	05/05/2012	Malignant emale					
+799	7074	7563613	10/12/2013	Benign by pathology emale					
+800	7087	5242304	03/05/2010	Benign by pathology emale					
+801	7110	6667647	12/01/2011	Benign by pathology emale					
+802	7160	6818749	07/06/2011	Benign by pathology emale					
+803	7161	5421192	09/11/2010	Benign by pathology emale					
+804	7162	6825661	12/04/2012	Benign by pathology emale					
+805	7169	4280178	16/02/2007	Malignant emale					
+806	7172	6769267	04/05/2011	Malignant emale					
+807	7173	5151766	15/12/2009	Benign by pathology emale					
+808	7173	5151766	15/12/2009	Benign by pathology emale					
+
+
+
+
+
 DONE
 #####################################################################################################
 #### Sharmila's list	(2012-2013)	
@@ -116,8 +376,18 @@ DONE
 522	7165	5021830	09/01/2010	ADENOSIS AND FIBROADENOMATOID CHANGE		
 523	3026	6830523	23/06/2011	 NON PROLIFERATIVE FIBROCYSTIC		
 524	3018	6865137	27/07/2011	benign-FAT NECROSIS; calcs			
-525     710	6798490	31/05/2011	 FOCAL DUCTAL HYPERPLASIA 		updated-cystic mass	
-526     3097	6909883	03/01/2012     ATYPICAL DUCTAL HYPERPLASIA
+525    710	6798490	31/05/2011	 FOCAL DUCTAL HYPERPLASIA 		updated-cystic mass	
+526    3097	6909883	03/01/2012     ATYPICAL DUCTAL HYPERPLASIA
+527    25   7002835     28/12/2011      Benign by pathology    DENSE FIBROSIS          
+528	66	7556910	12/10/2013	Benign by pathology     stromal hyperplasia    	
+529	102	4755778	19/03/2009	Benign by pathology     FIBROCYSTIC	Note: not good T2alignment			
+530	121	7091267	29/08/2012	Benign by pathology     ADENOSIS					
+531	135	5083620	19/07/2010	Benign by pathology     FIBROCYSTIC 					
+532	140	4888569	18/07/2009	Benign by pathology     FIBROCYSTIC					
+533     129	5326737	17/07/2010	Benign by pathology 	BENIGN BREAST TISSUE
+534     168	5240535	12/04/2010	Benign by pathology     FIBROCYSTIC
+535	203	4384800	01/12/2007	Benign by pathology     FIBROCYSTIC					
+536	252	7050431	07/07/2012	Benign by pathology      Pseudoangiomatous stromal hyperplasia (PASH)					
 
 
 
@@ -130,12 +400,101 @@ DONE
 
 
 
+TO CHECK IN PACS
+#####################################################################################################
+0103	3868229	02/12/2005	Benign by pathology     FIBROCYSTIC     Note: OFFLINE
+In the central left breast, predominantly located in the upper
+half but involving all 4 quadrants is a large, irregular lobulated
+mass measuring 4 x 4.4 x 4.2 cm (SI by transverse by AP). This
+demonstrates steep initial enhancement and areas of heterogeneous
+washout on delayed imaging. This 
+
+=====
+
+
+0127	4696964	11/09/2008	Benign by pathology 	FIBROADENOMA				
+ Lying 3.9 cm anterior and
+inferior to this, in the lower outer mid breast, is a 1.3 x 0.8 cm
+regional area of non mass enhancement lying 2.8 cm from the nipple
+with increasing enhancement over time and with associated T2
+bright signal (image 13); the appearance is suggestive of
+parenchyma.
+
+0189	5057674	10/10/2009	Benign by pathology         ADENOSIS				
+In the posterior 6 o'clock position left breast (image 19) there
+is an irregular, heterogeneous linear enhancing lesion measuring
+1.1 cm demonstrating a marked degree of rapid initial and plateau
+delayed enhancement. No additional change with no additional
+concerning abnormality.
+
+
+0178	2991275	11/07/2003	Malignant   A. Left breast (site A), core biopsy:  INVASIVE DUCT CARCINOMA OF THE BREAST    B. Left breast (site B), core biopsy:     IN-SITU DUCT CARCINOMA OF THE BREAST
+in the upper inner quadrant
+of the left breast is once again seen today. There now appears to
+be some architectural distortion of the breast of the region
+posteriorly with a new discrete irregular and spiculated mass
+measuring approximately 1.4 cm showing enhancement in the UIQ.
+
+addition, there is regional enhancement of the UIQ with more linear
+enhancement seen best on image 10, in the middle third of the
+breast, and an adjacent enhancing nodule more superiorly lateral to
+the nipple line.
+			
+
+0199	4362726	18/05/2007	Benign by pathology     LOBULAR CARCINOMA IN SITU				
+In the lower central left breast there is an enhancing mass with
+increasing enhancement over time, irregular margins, associated
+high T2 signal, and non enhancing internal septations, measuring
+1.12 [SI] x 1.0 [AP] cm [image 24]. This corresponds to the
+mammographic mass.
+
+
+0205	5085133	17/04/2010	Benign by pathology 	
+ There is a new, oval, smoothly marginated 9 x 6 mm mass
+with gentle lobulations in the upper outer quadrant (image 14)
+which has high T2 signal intensity and shows rapid early
+enhancement with delayed plateau. It appears to contain a few
+non-enhancing septations.
+
+
+252	5142106	04/12/2009	Benign by pathology      FIBROADENOMA 					
+In the left breast (image 25) , in the upper quadrant between 11
+and 12 o'clock position in the posterior third is a 7.4 mm rapidly
+enhancing heterogeneous mass with washout on delayed phase. This
+is hypointense on T2.
+Mass on image 25 left breast. Ultrasound and ultrasound guided
+core biopsy suggested. If not seen, MRI guided biopsy suggested.
+BI-RADS 4
+
+
+#####################################################################################################
+Exludes out of new lesions (query BIRADS 3,4,5)
+#####################################################################################################
+37	6992258	06/12/2011	Benign by pathology     Exclude: No MRI correlate to the bilateral masses seen on previous ultrasound				
+68	3104885	18/06/2003	Benign by pathology     DUCTAL HYPERPLASIA WITHOUT ATYPIA      Exclude: previous R lumpectomy, Sag 2D SPGR						
+68	3741329	14/07/2005     	                                     Exclude:RIGHT BREAST ULTRASOUND AND ULTRASOUND GUIDED CORE BIOPSY
+135	5083620	19/07/2010	Benign by pathology     FIBROCYSTIC         Exclude: previous L lumpectomy
+171	2991571	16/01/2003	Malignant       Exclude: previous Sag 2D SPGR						 					
+207	4982884	09/11/2009	Benign by pathology     Exclude: Prior right lumpectomy, new biopsy in same site				
+225	2728700	08/02/2002	Malignant   DUCTAL CARCINOMA IN-SITU     Exclude: previous Sag 2D SPGR	 Right lumpectomy for basal ductal carcinoma 2001. Previous left ultrasound core biopsy - fibroadenoma.
+233	3865281	15/11/2005      LEFT BREAST ULTRASOUND GUIDED CORE BIOPSY, POSTBIOPSY CLIP PLACEMENT AND MAMMOGRAM
+233	3832389      06/10/2005      	FIBROCYSTIC          Exclude: previous Sag 2D SPGR
+248	3079177	16/05/2003	Benign by pathology      FIBROADENOMA	Exclude: previous Sag 2D SPGR  Right breast core biopsy 2000 fibroadenoma.
+248	3095213	05/06/2003	Benign by pathology  FIBROADENOMA		Exclude: previous Sag 2D SPGR			
+249	4108008	11/08/2006	LEFT ULTRASOUND GUIDED CORE BIOPSY, CLIP PLACEMENT AND LEFT
+282	2595081	10/08/2001	Benign by pathology      PAPILLOMATOSIS 	Exclude: previous Sag 2D SPGR					
+283	2859487	31/07/2002	Malignant    	DUCT CARCINOMA WITH PROMINENT LYMPHOID STROMA 		   Exclude: previous Sag 2D SPGR		
+299	3171308	10/09/2003	Malignant     INVASIVE LOBULAR CARCINOMA     Exclude: previous Sag 2D SPGR		
 
 
 
 
 
-# exluded
+
+
+
+
+# exluded from old list
 #####################################################################################################
 3000	4546854	04/01/2008	lobular invasive 		NOTE: only up to Ph3/post-contrast
 4032	6884401	14/08/2011	Part A - Right breast biopsy posterior : DENSE FIBROSIS	# inf dynfeatures			 

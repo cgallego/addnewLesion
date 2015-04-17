@@ -52,11 +52,11 @@ class AddNewRecords(object):
         """ Turn Class into a callable object """
         AddNewRecords() 
 
-    def lesion_2DB(self, lesionfile, cad_id, dicom_no, accession_no, exam_date, cad_status, mutation, mass_yn, nonmass_yn, finding_side, proc_id, proc_date, proc_side, proc_source, proc_guid, proc_type, lesion_comments, original_report, curve_int, dce_init, dce_delay, label, diagnosis):        
+    def lesion_2DB(self, lesionfile, cad_id, dicom_no, accession_no, exam_date, cad_status, mutation, mass_yn, nonmass_yn, foci_yn, finding_side, proc_id, proc_date, proc_side, proc_source, proc_guid, proc_type, lesion_comments, original_report, curve_int, dce_init, dce_delay, label, diagnosis):        
         
         self.session = self.Session() #instantiate a Session
         # Send to database lesion info
-        lesion_info = mylocaldatabase.Lesion_record(lesionfile, cad_id, dicom_no, accession_no, exam_date, cad_status, mutation, mass_yn, nonmass_yn, finding_side, proc_id, proc_date, proc_side, proc_source, proc_guid, proc_type, lesion_comments, original_report, curve_int, dce_init, dce_delay, label, diagnosis)
+        lesion_info = mylocaldatabase.Lesion_record(lesionfile, cad_id, dicom_no, accession_no, exam_date, cad_status, mutation, mass_yn, nonmass_yn, foci_yn, finding_side, proc_id, proc_date, proc_side, proc_source, proc_guid, proc_type, lesion_comments, original_report, curve_int, dce_init, dce_delay, label, diagnosis)
         self.session.add(lesion_info)
         print self.session.query(mylocaldatabase.Lesion_record).first()
         
@@ -106,6 +106,26 @@ class AddNewRecords(object):
             self.session.close()
             
         return
+    
+    
+    def foci_2DB(self, lesion_id, BenignNMaligNAnt, DynSeries_id, T2Series_id, mri_foci_distr):        
+        
+        self.session = self.Session() #instantiate a Session
+        # Send to database lesion info
+        foci_record = mylocaldatabase.Foci_record(lesion_id, BenignNMaligNAnt, DynSeries_id, T2Series_id, mri_foci_distr)
+        self.session.add(foci_record)
+        
+        # Finally send records to database
+        try:
+            self.session.commit()
+        except:
+            self.session.rollback()
+            raise
+        finally:
+            self.session.close()
+            
+        return        
+        
         
     def dyn_records_2DB(self, lesion_id, A_inside, alpha_inside, beta_inside, iAUC1_inside, Slope_ini_inside, Tpeak_inside,
                  Kpeak_inside, SER_inside, maxCr_inside, peakCr_inside, UptakeRate_inside, washoutRate_inside, maxVr_inside,
