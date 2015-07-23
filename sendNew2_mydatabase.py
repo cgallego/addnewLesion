@@ -32,8 +32,7 @@ import annot
  
 from sqlalchemy import Column, Integer, String
 import datetime
-from mybase import myengine
-import mydatabase
+
 from sqlalchemy.orm import sessionmaker
 from add_newrecords import *
 
@@ -130,7 +129,7 @@ class SendNew(object):
             self.frame = pd.DataFrame(data=array( ['NA'] * 10))
             self.frame = self.frame.transpose()
             self.frame.columns = ["finding.side_int", "finding.size_x_double", "finding.size_y_double", "finding.size_z_double", "finding.mri_dce_init_enh_int", "finding.mri_dce_delay_enh_int", "finding.curve_int", "finding.mri_mass_margin_int", "finding.mammo_n_mri_mass_shape_int", "finding.t2_signal_int"]
-            img_folder = 'Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'mass'
+            img_folder = 'C:'+os.sep+'MassNonmass'+os.sep+'mass'  #Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'mass'
             print  img_folder
             cond = 'mass'
             self.casesFrame['finding.mri_mass_yn'] = True
@@ -148,7 +147,7 @@ class SendNew(object):
             self.frame = pd.DataFrame(data=array( ['NA'] * 10))
             self.frame = self.frame.transpose()
             self.frame.columns = ['finding.side_int','finding.size_x_double','finding.size_y_double','finding.size_z_double','finding.mri_dce_init_enh_int','finding.mri_dce_delay_enh_int','finding.curve_int','finding.mri_nonmass_dist_int', 'finding.mri_nonmass_int_enh_int','finding.t2_signal_int']
-            img_folder = 'Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'nonmass'
+            img_folder = 'C:'+os.sep+'MassNonmass'+os.sep+'nonmass' #'Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'nonmass'
             print  img_folder
             cond = 'nonmass'
             self.casesFrame['finding.mri_nonmass_yn'] = True
@@ -166,7 +165,7 @@ class SendNew(object):
             self.frame = pd.DataFrame(data=array( ['NA'] * 9))
             self.frame = self.frame.transpose()
             self.frame.columns = ["finding.side_int", "finding.size_x_double", "finding.size_y_double", "finding.size_z_double", "finding.mri_dce_init_enh_int", "finding.mri_dce_delay_enh_int", "finding.curve_int", "finding.mri_foci_distr_int", "finding.t2_signal_int"]
-            img_folder = 'Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'foci'
+            img_folder = 'C:'+os.sep+'MassNonmass'+os.sep+'foci' #'Z:'+os.sep+'Cristina'+os.sep+'MassNonmass'+os.sep+'foci'
             print  img_folder
             cond = 'foci'
             self.casesFrame['finding.mri_nonmass_yn'] = False
@@ -429,10 +428,19 @@ class SendNew(object):
             
             print "\n Visualize addT2visualize ..."
             self.loadDisplay.addT2visualize(self.load.T2Images, self.load.T2image_pos_pat, self.load.T2image_ori_pat, self.load.T2dims, self.load.T2spacing, interact=True)
-            transT2 = int(raw_input('\n Translate T2 by xf_T1? Yes:1 No:0 : '))
-            if transT2:
+            transT2 = raw_input('\n Translate T2 by xf_T1? Yes:1 No:0 t=: using T1 coords: ')
+            if transT2 == '1':
                 self.loadDisplay.addT2transvisualize(self.load.T2Images, self.load.T2image_pos_pat, self.load.T2image_ori_pat, self.load.T2dims, self.load.T2spacing, finding_side, interact=True)
                 self.load.T2image_pos_pat[0] = -self.loadDisplay.T2origin[2] 
+                print self.loadDisplay.T2origin[2]
+            
+            if transT2 == 't': 
+                self.load.T2image_pos_pat[0] = -self.loadDisplay.T1origin[2] 
+                print self.loadDisplay.T1origin[2]
+                self.load.T2image_pos_pat[1] = -self.loadDisplay.T1origin[1]
+                print self.loadDisplay.T1origin[1]
+                self.load.T2image_pos_pat[2] = -self.loadDisplay.T1origin[0]
+                print self.loadDisplay.T1origin[2]
     
             # Do extract_muscleSI 
             [T2_muscleSI, muscle_scalar_range, bounds_muscleSI]  = self.T2.extract_muscleSI(self.load.T2Images, self.load.T2image_pos_pat, self.load.T2image_ori_pat,  self.loadDisplay.iren1, self.loadDisplay.renderer1, self.loadDisplay.picker, self.loadDisplay.xImagePlaneWidget, self.loadDisplay.yImagePlaneWidget, self.loadDisplay.zImagePlaneWidget)
@@ -469,16 +477,19 @@ class SendNew(object):
         
     def addRecordDB_lesion(self, Lesionfile, fStudyID, DicomExamNumber, dateID, casesFrame, finding_side, dataCase, cond, Diagnosis, 
                            lesion_id, BenignNMaligNAnt,  SeriesID, T2SeriesID):
+                                       
         #############################
         ###### Send record to DB
         ## append collection of cases
         #############################  
         print "\n Adding record case to DB..."
         if 'proc.pt_procedure_id' in casesFrame.keys():
-            self.newrecords.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
+            self.newrecords.lesion_2DB(Lesionfile, fStudyID, casesFrame['pt.anony_dob_datetime'], DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 
                            str(casesFrame['cad.latest_mutation']), casesFrame['finding.mri_mass_yn'], casesFrame['finding.mri_nonmass_yn'], casesFrame['finding.mri_foci_yn'], finding_side, str(casesFrame['proc.pt_procedure_id']), 
                             casesFrame['proc.proc_dt_datetime'], str(casesFrame['proc.proc_side_int']), str(casesFrame['proc.proc_source_int']),  str(casesFrame['proc.proc_guid_int']), 
-                            str(casesFrame['proc.proc_tp_int']), str(casesFrame['exam.comment_txt']), str(casesFrame['proc.original_report_txt']), str(dataCase['finding.curve_int']), str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), str(cond)+str(BenignNMaligNAnt),  Diagnosis)
+                            str(casesFrame['proc.proc_tp_int']), str(casesFrame['exam.comment_txt']), str(casesFrame['proc.original_report_txt']), str(dataCase['finding.curve_int']), 
+                            str(dataCase['finding.mri_dce_init_enh_int']), str(dataCase['finding.mri_dce_delay_enh_int']), casesFrame['finding.all_birads_scr_int'],
+                            str(cond)+str(BenignNMaligNAnt),  Diagnosis)
         
         if not 'proc.pt_procedure_id' in casesFrame.keys():
             self.newrecords.lesion_2DB(Lesionfile, fStudyID, DicomExamNumber, str(casesFrame['exam.a_number_txt']), dateID, str(casesFrame['exam.mri_cad_status_txt']), 

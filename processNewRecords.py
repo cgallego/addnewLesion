@@ -32,10 +32,9 @@ import pylab
  
 from sqlalchemy import Column, Integer, String
 import datetime
-from mybase import myengine
-import mydatabase
+
 from sqlalchemy.orm import sessionmaker
-from add_records import *
+from add_newrecords import *
 from sendNew2_mydatabase import *
 from newFeatures import *
 
@@ -87,19 +86,18 @@ if __name__ == '__main__':
     file_ids = open(sys.argv[1],"r")
     file_ids.seek(0)
     
-    for k in range(1):
-        line = file_ids.readline()
+    line = file_ids.readline()
     print line
        
     while ( line ) : 
-        # Get the line: id  	Study #	MRN	ProcedDate	Path-In situ ca	Path-Invasive ca
+        # Get the line: id  	id	CAD study #	Accession #	Date of Exam	Pathology Diagnosis 
         fileline = line.split()
         lesion_id = int(fileline[0] )
         StudyID = fileline[1] 
         PatientID = fileline[2]  
         dateID = fileline[3]
         Diagnosis = fileline[5:]
-        
+  
         #############################
         print "\n Adding record radiology"
         SendNew2DB = SendNew()
@@ -123,13 +121,13 @@ if __name__ == '__main__':
         else:
             finding_side = 'NA'
 
-        pathSegment = 'C:\Users\windows\Documents\repoCode-local\stage1features\seg+T2'
+        pathSegment = 'C:\Users\windows\Documents\repoCode-local\addnewLesion\segmentations'
         if 'proc.pt_procedure_id' in SendNew2DB.casesFrame.keys():
             nameSegment = StudyID+'_'+AccessionN+'_'+str(SendNew2DB.casesFrame['proc.pt_procedure_id'].iloc[0])+'.vtk'
             ## for old DicomExamNumber         
-            nameSegment = StudyID+'_'+AccessionN+'_'+str(fileline[4])+'.vtk'
+            #nameSegment = StudyID+'_'+AccessionN+'_'+str(fileline[4])+'.vtk'
         else:
-            nameSegment = StudyID+'_'+AccessionN+'_'+'lesion.vtk'      
+            nameSegment = StudyID+'_'+AccessionN+'_'+str(lesion_id)     
 
                    
         #############################
@@ -197,8 +195,7 @@ if __name__ == '__main__':
 
         [degreeC, closenessC, betweennessC, no_triangles, no_con_comp] = newfeatures.analyzeGraph(G)        
         network_measures = [degreeC, closenessC, betweennessC, no_triangles, no_con_comp]
-        
-        
+                
         #############################
         ###### 8) End and Send record to DB
         #############################

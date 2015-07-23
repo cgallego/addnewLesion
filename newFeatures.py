@@ -20,7 +20,7 @@ from inputs_init import *
 from display import *
 import pylab      
 import annot
-from add_records import *
+from add_newrecords import *
 
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
@@ -42,7 +42,7 @@ class newFeatures(object):
     """
     def __init__(self, load, display): 
         self.dataInfo = []
-        self.records = AddRecords()
+        self.records = AddNewRecords()
         # Create only 1 display
         self.loadDisplay = display
         self.load = load

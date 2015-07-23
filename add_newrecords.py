@@ -52,11 +52,11 @@ class AddNewRecords(object):
         """ Turn Class into a callable object """
         AddNewRecords() 
 
-    def lesion_2DB(self, lesionfile, cad_id, dicom_no, accession_no, exam_date, cad_status, mutation, mass_yn, nonmass_yn, foci_yn, finding_side, proc_id, proc_date, proc_side, proc_source, proc_guid, proc_type, lesion_comments, original_report, curve_int, dce_init, dce_delay, label, diagnosis):        
+    def lesion_2DB(self, lesionfile, cad_id, anony_dob, dicom_no, accession_no, exam_date, cad_status, mutation, mass_yn, nonmass_yn, foci_yn, finding_side, proc_id, proc_date, proc_side, proc_source, proc_guid, proc_type, lesion_comments, original_report, curve_int, dce_init, dce_delay, BIRADS, label, diagnosis):        
         
         self.session = self.Session() #instantiate a Session
         # Send to database lesion info
-        lesion_info = mylocaldatabase.Lesion_record(lesionfile, cad_id, dicom_no, accession_no, exam_date, cad_status, mutation, mass_yn, nonmass_yn, foci_yn, finding_side, proc_id, proc_date, proc_side, proc_source, proc_guid, proc_type, lesion_comments, original_report, curve_int, dce_init, dce_delay, label, diagnosis)
+        lesion_info = mylocaldatabase.Lesion_record(lesionfile, cad_id, anony_dob, dicom_no, accession_no, exam_date, cad_status, mutation, mass_yn, nonmass_yn, foci_yn, finding_side, proc_id, proc_date, proc_side, proc_source, proc_guid, proc_type, lesion_comments, original_report, curve_int, dce_init, dce_delay, BIRADS, label, diagnosis)
         self.session.add(lesion_info)
         print self.session.query(mylocaldatabase.Lesion_record).first()
         

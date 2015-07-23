@@ -1,0 +1,476 @@
+0002|Benign by pathology|Female|1954-02-18|57|MRI|2011-04-03|-2|6745896|f|f|f|t|f|f|f|f|f|f|f|f
+0016|Benign by pathology|Female|1980-01-03|31|MRI|2011-09-24|-2|6920252|f|f|t|t|f|f|f|f|f|f|f|f
+0018|Malignant|Female|1957-04-16|46|MRI|2003-02-05|-10|3008479|f|f|f|t|f|t|f|f|f|f|f|f
+0025|Benign by pathology|Female|1941-08-17|70|MRI|2011-12-28|-2|7002835|t|f|f|f|f|f|f|f|f|f|f|f
+0025|Benign by pathology|Female|1941-08-17|71|MRI|2012-07-03|-1|7128068|f|f|f|f|f|f|f|f|f|f|f|f
+0027|Malignant|Female|1940-05-30|71|MRI|2011-05-27|-2|6805483|t|f|f|f|f|f|f|f|f|f|t|f
+0037|Benign by pathology|Female|1951-08-11|60|MRI|2011-12-06|-2|6992258|t|f|f|f|f|f|f|f|f|f|f|f
+0059|Malignant|Female|1961-09-02|40|MRI|2001-10-01|-12|2631431|f|f|f|f|f|f|f|f|f|f|f|f
+0066|Benign by pathology|Female|1975-09-06|38|MRI|2013-10-12|0|7556910|f|f|f|t|f|f|f|f|f|f|f|f
+0068|Benign by pathology|Female|1943-06-29|60|MRI|2003-05-26|-10|3085315|f|f|f|t|f|t|f|f|f|f|f|f
+0068|Benign by pathology|Female|1943-06-29|60|MRI|2003-06-18|-10|3104885|t|f|f|t|f|f|f|f|f|f|f|f
+0068||Female|1943-06-29|62|MRI|2005-07-14|-8|3741329|f|f|f|f|f|f|f|f|f|f|f|f
+0102|Benign by pathology|Female|1974-05-19|35|MRI|2009-03-19|-4|4755778|f|f|f|t|f|f|f|f|f|f|f|f
+0103|Benign by pathology|Female|1965-12-20|40|MRI|2005-12-02|-8|3868229|f|f|f|f|f|f|f|f|f|f|t|f
+0103|Benign by pathology|Female|1965-12-20|46|MRI|2011-06-26|-2|6836585|t|f|f|f|f|f|f|f|f|f|f|f
+0111|Benign by pathology|Female|1966-07-10|45|MRI|2011-09-15|-2|6907205|t|f|f|f|f|f|f|f|f|f|f|f
+0114|Malignant|Female|1950-11-25|61|MRI|2011-10-02|-2|6896014|t|f|f|t|f|f|f|f|f|f|f|f
+0121|Benign by pathology|Female|1965-04-24|46|MRI|2011-02-22|-2|6714524|f|f|f|t|f|f|f|f|f|f|f|f
+0121|Benign by pathology|Female|1965-04-24|47|MRI|2012-08-29|-1|7091267|f|f|f|t|f|f|f|f|f|f|t|f
+0127|Benign by pathology|Female|1976-06-15|32|MRI|2008-09-11|-5|4696964|f|f|f|t|f|f|f|f|f|f|f|f
+0129|Benign by pathology|Female|1958-03-27|52|MRI|2010-07-17|-3|5326737|t|f|f|f|f|f|f|f|f|f|f|f
+0133|Benign by pathology|Female|1964-12-03|48|MRI|2012-03-10|-1|7072006|f|f|f|t|f|f|f|f|f|f|f|f
+0135|Benign by pathology|Female|1969-11-21|41|MRI|2010-07-19|-3|5083620|f|f|f|f|f|f|f|f|f|f|f|f
+0140|Benign by pathology|Female|1973-01-25|36|MRI|2009-07-18|-4|4888569|f|f|f|f|f|f|f|f|f|f|f|t
+0168|Benign by pathology|Female|1941-07-23|69|MRI|2010-04-12|-3|5240535|f|f|f|f|f|f|f|f|f|f|t|f
+0171|Malignant|Female|1958-12-21|51|MRI|2009-02-22|-4|4751079|f|f|f|t|f|t|f|f|f|f|f|f
+0171|Malignant|Female|1958-12-21|45|MRI|2003-02-25|-10|3025601|f|f|f|f|f|f|f|f|f|f|f|f
+0178|Malignant|Female|1964-10-12|39|MRI|2003-07-11|-10|2991275|f|f|f|f|f|f|f|f|f|f|t|t
+0180|Benign by pathology|Female|1946-08-19|64|MRI|2010-12-14|-3|5254957|f|f|f|t|f|f|f|f|f|f|f|f
+0186|Malignant|Female|1963-10-30|48|MRI|2011-08-02|-2|6869828|f|f|f|t|t|f|f|f|f|f|f|f
+0189|Benign by pathology|Female|1962-05-10|47|MRI|2009-10-10|-4|5057674|f|f|f|t|f|f|f|f|f|f|f|f
+0190|Malignant|Female|1975-04-25|36|MRI|2011-04-12|-2|6760690|f|f|f|f|f|f|f|f|f|f|f|t
+0199|Benign by pathology|Female|1949-09-26|58|MRI|2007-05-18|-6|4362726|t|f|f|f|f|f|f|f|f|f|f|f
+0203|Benign by pathology|Female|1961-01-13|46|MRI|2007-12-27|-6|4535858|t|f|f|f|f|f|f|f|f|f|f|f
+0205|Benign by pathology|Female|1965-05-20|45|MRI|2010-04-17|-3|5085133|f|f|f|f|f|f|f|f|f|f|t|f
+0207|Benign by pathology|Female|1943-03-02|66|MRI|2009-11-09|-4|4982884|f|t|f|t|f|t|f|f|f|f|f|f
+0225|Malignant|Female|1960-10-06|42|MRI|2002-02-08|-11|2728700|f|f|f|t|f|t|f|f|f|f|f|f
+0225|Malignant|Female|1960-10-06|42|MRI|2002-02-20|-11|2738016|f|f|f|f|f|f|f|f|f|f|f|f
+0229|Malignant|Female|1972-07-05|39|MRI|2011-06-15|-2|6831376|t|f|f|f|f|f|f|f|f|f|f|f
+0232|Benign by pathology|Female|1977-05-21|34|MRI|2011-01-11|-2|6671713|t|f|f|f|f|f|f|f|f|f|f|f
+0233||Female|1947-05-30|58|MRI|2005-12-01|-8|3879052|t|f|f|t|f|f|f|f|f|f|f|f
+0233||Female|1947-05-30|58|MRI|2005-11-15|-8|3865281|f|f|f|f|f|f|f|f|f|f|f|f
+0248|Benign by pathology|Female|1958-11-19|45|MRI|2003-05-16|-10|3079177|f|f|f|t|f|t|f|f|f|f|f|f
+0248|Benign by pathology|Female|1958-11-19|45|MRI|2003-06-05|-10|3095213|f|f|f|t|f|t|f|f|f|f|f|f
+0249||Female|1953-04-04|53|MRI|2006-08-11|-7|4108008|f|f|f|f|f|f|f|f|f|f|f|f
+0252|Benign by pathology|Female|1965-07-24|44|MRI|2009-12-04|-4|5142106|t|f|f|f|f|f|f|f|f|f|f|f
+0252|Benign by pathology|Female|1965-07-24|47|MRI|2012-07-07|-1|7050431|f|f|f|f|f|f|f|f|f|f|f|t
+0266|Benign by pathology|Female|1953-03-30|57|MRI|2010-07-16|-3|5254958|f|f|f|t|f|f|f|f|f|f|f|f
+0271|Malignant|Female|1968-07-20|39|MRI|2007-02-02|-6|4263872|f|f|f|t|f|f|f|f|f|f|f|f
+0272|Benign by pathology|Female|1963-08-19|42|MRI|2005-08-04|-8|3772910|t|f|f|t|f|f|f|f|f|f|f|f
+0276|Malignant|Female|1953-02-06|58|MRI|2011-12-31|-2|6952525|f|f|t|f|f|f|f|f|f|f|f|f
+0280|Malignant|Female|1956-04-25|53|MRI|2009-12-07|-4|5091695|f|f|f|t|f|f|f|f|f|f|f|f
+0282|Benign by pathology|Female|1952-08-16|49|MRI|2001-07-20|-12|5280457|f|f|f|t|f|f|f|f|f|f|f|f
+0282|Benign by pathology|Female|1952-08-16|49|MRI|2001-08-10|-12|2595081|f|f|f|t|f|f|f|f|f|f|f|f
+0283|Malignant|Female|1949-05-20|53|MRI|2002-07-31|-11|2859487|f|f|f|t|f|f|f|f|f|f|f|f
+0283|Malignant|Female|1949-05-20|53|MRI|2002-08-28|-11|2879650|f|t|f|t|f|t|t|f|f|f|f|f
+0299|Benign by pathology|Female|1954-09-14|47|MRI|2001-08-30|-12|2609015|f|f|f|t|f|t|f|f|f|f|f|f
+0299|Malignant|Female|1954-09-14|49|MRI|2003-09-10|-10|3171308|f|t|f|t|f|t|f|f|f|f|f|f
+0308|Malignant|Female|1944-06-08|62|MRI|2006-04-27|-7|4006327|f|f|f|t|f|t|f|f|f|f|f|f
+0311||Female|1961-12-04|50|MRI|2011-02-04|-2|6704171|f|f|f|f|f|f|f|f|f|f|f|f
+0320|Malignant|Female|1973-11-17|33|MRI|2006-01-20|-7|3901468|f|f|f|t|f|f|f|f|f|f|f|f
+0320|Malignant|Female|1973-11-17|33|MRI|2006-02-16|-7|3944835|t|f|f|t|f|f|f|f|f|f|t|f
+0323|Malignant|Female|1953-02-14|49|MRI|2002-01-09|-11|2704388|t|f|f|t|f|f|f|f|f|f|f|t
+0331|Benign by pathology|Female|1957-11-15|56|MRI|2013-02-16|0|7347095|f|f|t|t|f|f|f|f|f|f|f|f
+0331||Female|1957-11-15|56|MRI|2013-08-31|0|7472636|f|f|f|t|f|f|f|f|f|f|f|f
+0334|Benign by pathology|Female|1940-01-20|65|MRI|2005-02-11|-8|3624235|f|f|f|t|f|f|f|f|f|f|f|t
+0339|Benign by pathology|Female|1974-07-01|32|MRI|2006-04-05|-7|3984239|t|f|f|t|f|f|f|f|f|f|f|t
+0346|Malignant|Female|1956-09-15|46|MRI|2002-04-23|-11|2785191|f|f|f|t|f|f|f|f|f|f|t|t
+0347|Malignant|Female|1947-08-09|55|MRI|2002-04-15|-11|2778566|f|f|f|t|f|t|f|f|f|f|f|f
+0347|Malignant|Female|1947-08-09|55|MRI|2002-04-26|-11|2788355|f|f|f|t|f|t|f|f|f|f|f|t
+0352|Benign by pathology|Female|1977-08-04|26|MRI|2003-06-20|-10|3107122|f|f|f|t|f|f|f|f|f|f|f|f
+0352|Benign by pathology|Female|1977-08-04|32|MRI|2009-01-19|-4|4785776|f|f|f|t|f|f|f|f|f|f|f|f
+0355|Benign by pathology|Female|1973-07-22|33|MRI|2006-03-10|-7|3968223|f|f|f|t|f|f|f|f|f|f|f|f
+0357|Benign by pathology|Female|1972-06-17|37|MRI|2009-12-15|-4|5137030|f|f|f|t|f|t|f|f|f|f|f|f
+0358|Malignant|Female|1940-01-16|62|MRI|2002-12-17|-11|2971202|f|f|f|t|f|t|f|f|f|f|f|f
+0363|Benign by pathology|Female|1965-04-27|38|MRI|2003-05-15|-10|3078370|f|f|f|t|f|f|f|f|f|f|f|f
+0363|Benign by pathology|Female|1965-04-27|38|MRI|2003-06-04|-10|3093823|f|f|f|t|f|f|f|f|f|f|f|f
+0366|Malignant|Female|1937-10-15|68|MRI|2005-09-09|-8|3787337|f|f|f|t|f|f|t|f|f|f|f|f
+0376|Benign by pathology|Female|1976-03-31|26|MRI|2002-10-07|-11|2911484|t|f|f|t|f|f|f|f|f|f|f|t
+0383|Malignant|Female|1965-04-30|38|MRI|2003-08-22|-10|3147393|f|f|f|t|f|t|f|f|f|f|f|f
+0383|Malignant|Female|1965-04-30|38|MRI|2003-08-22|-10|3147393|f|f|f|t|f|t|f|f|f|f|f|f
+0384|Benign by pathology|Female|1967-01-15|36|MRI|2003-02-12|-10|3014835|t|f|f|t|f|f|f|f|f|f|f|t
+0388|Malignant|Female|1965-08-01|48|MRI|2013-02-26|0|7395410|f|f|t|t|f|f|f|f|f|f|f|f
+0393|Benign by pathology|Female|1966-12-09|41|MRI|2007-12-05|-6|4527343|t|f|f|t|f|f|f|f|f|f|f|f
+0396|Malignant|Female|1952-02-11|50|MRI|2002-11-14|-11|2944196|t|f|f|t|f|f|f|f|f|f|f|f
+0396|Benign by pathology|Female|1952-02-11|51|MRI|2003-07-16|-10|3128568|f|t|f|t|f|t|f|f|f|f|f|f
+0400|Benign by pathology|Female|1976-06-26|33|MRI|2009-02-26|-4|4885547|t|f|f|t|f|f|f|f|f|f|f|f
+0400|Benign by pathology|Female|1976-06-26|33|MRI|2009-03-17|-4|4907064|t|f|f|f|f|f|f|f|f|f|f|f
+0407|Benign by pathology|Female|1940-01-30|64|MRI|2004-05-04|-9|3380787|f|f|f|f|f|f|f|f|f|f|f|f
+0409|Benign by pathology|Female|1943-09-12|67|MRI|2010-06-08|-3|5161803|t|f|f|t|f|t|f|f|f|f|f|f
+0409|Benign by pathology|Female|1943-09-12|68|MRI|2011-04-24|-2|6696680|f|t|f|t|f|f|f|f|f|f|f|f
+0415|Malignant|Female|1971-06-01|35|MRI|2006-05-23|-7|4016387|t|f|f|f|f|f|f|f|f|f|f|f
+0422|Benign by pathology|Female|1962-05-26|50|MRI|2012-04-14|-1|6989690|f|f|t|t|f|f|f|f|f|f|f|f
+0424|Benign by pathology|Female|1974-02-15|31|MRI|2005-03-17|-8|3652975|t|f|f|t|f|f|f|f|f|f|f|f
+0426|Benign by pathology|Female|1962-07-01|49|MRI|2011-11-01|-2|6952324|t|f|f|t|f|f|f|f|f|f|t|f
+0426|Benign by pathology|Female|1962-07-01|50|MRI|2012-06-29|-1|7169326|f|f|t|f|f|f|f|f|f|f|f|f
+0427|Benign by pathology|Female|1961-06-24|45|MRI|2006-08-09|-7|4102461|t|f|f|t|f|f|f|f|f|f|f|f
+0427|Benign by pathology|Female|1961-06-24|45|MRI|2006-08-15|-7|4102462|t|f|f|t|f|f|f|f|f|f|f|f
+0428|Benign by pathology|Female|1967-08-31|38|MRI|2005-06-16|-8|3722082|t|f|f|t|f|f|f|f|f|f|f|f
+0436|Benign by pathology|Female|1963-03-28|40|MRI|2003-05-09|-10|3073833|f|f|f|t|f|t|f|f|f|f|f|f
+0438|Malignant|Female|1942-01-04|61|MRI|2003-11-27|-10|3239360|f|t|f|t|f|t|f|f|f|f|f|f
+0440|Benign by pathology|Female|1961-04-22|49|MRI|2010-05-23|-3|5098312|f|f|f|t|f|t|f|f|f|f|f|f
+0442|Benign by pathology|Female|1969-03-07|41|MRI|2010-03-13|-3|4936886|f|f|f|t|f|t|f|f|f|f|f|f
+0454|Benign by pathology|Female|1952-08-29|55|MRI|2007-10-03|-6|4478633|f|f|f|t|f|f|f|f|f|f|f|f
+0455|Malignant|Female|1955-05-20|48|MRI|2003-11-07|-10|3223237|f|f|f|t|f|f|f|f|f|f|f|f
+0456|Benign by pathology|Female|1954-10-22|53|MRI|2007-11-21|-6|4480220|t|f|f|t|f|f|f|f|f|f|f|f
+0460|Benign by pathology|Female|1976-11-30|29|MRI|2005-06-17|-8|3726278|t|f|f|t|f|f|f|f|f|f|f|f
+0462|Benign by pathology|Female|1977-05-29|33|MRI|2010-12-23|-3|5466989|f|f|f|t|f|f|f|f|f|f|f|f
+0465|Benign by pathology|Female|1974-10-12|35|MRI|2009-12-29|-4|5062382|f|f|f|t|f|f|f|f|f|f|f|f
+0469|Benign by pathology|Female|1955-06-15|50|MRI|2005-12-15|-8|3888207|t|f|f|t|f|f|f|f|f|f|f|f
+0476|Benign by pathology|Female|1968-05-11|37|MRI|2005-02-10|-8|3608493|f|f|f|t|f|f|f|f|f|f|f|f
+0483|Benign by pathology|Female|1962-12-07|42|MRI|2004-03-11|-9|3331258|t|f|f|t|f|f|f|f|f|f|f|f
+0483|Benign by pathology|Female|1962-12-07|42|MRI|2004-03-11|-9|3331255|t|f|f|t|f|f|f|f|f|f|f|f
+0483|Benign by pathology|Female|1962-12-07|47|MRI|2009-03-23|-4|4906750|t|f|f|t|f|f|f|f|f|f|f|f
+0514|Benign by pathology|Female|1980-01-27|27|MRI|2007-09-28|-6|4458496|f|f|f|f|f|f|f|f|f|f|f|f
+0522|Benign by pathology|Female|1960-03-04|45|MRI|2005-03-16|-8|3636420|f|f|f|t|f|f|f|f|f|f|f|f
+0522||Female|1960-03-04|48|MRI|2008-01-07|-5|4553037|f|f|f|t|f|f|f|f|f|f|f|f
+0529|Benign by pathology|Female|1959-07-10|50|MRI|2009-03-26|-4|4906721|f|f|f|t|f|f|f|f|f|f|f|f
+0533|Benign by pathology|Female|1961-10-28|48|MRI|2009-03-27|-4|4906729|f|f|f|t|f|f|f|f|f|f|f|f
+0537|Benign by pathology|Female|1957-12-11|49|MRI|2006-03-30|-7|3980081|t|f|f|t|f|f|f|f|f|f|f|f
+0542|Benign by pathology|Female|1956-05-21|51|MRI|2007-11-22|-6|4522254|t|f|f|t|f|f|f|f|f|f|f|f
+0552|Benign by pathology|Female|1969-03-08|39|MRI|2008-05-15|-5|4663314|f|f|f|f|f|f|f|f|f|f|f|f
+0560|Benign by pathology|Female|1969-10-01|38|MRI|2007-05-28|-6|4325688|f|f|f|t|f|f|f|f|f|f|f|f
+0560|Benign by pathology|Female|1969-10-01|38|MRI|2007-05-31|-6|4376884|t|f|f|t|f|f|f|f|f|f|f|f
+0561|Benign by pathology|Female|1976-03-27|32|MRI|2008-05-30|-5|4668611|f|f|f|t|f|f|f|f|f|f|f|f
+0562|Malignant|Female|1960-06-13|46|MRI|2006-04-06|-7|3984242|t|f|f|t|f|f|f|f|f|f|f|f
+0562|Malignant|Female|1960-06-13|46|MRI|2006-05-02|-7|4013521|f|f|f|t|f|f|f|f|f|f|f|f
+0566|Benign by pathology|Female|1964-10-15|45|MRI|2009-05-29|-4|4956717|t|f|f|t|f|f|f|f|f|f|f|f
+0567|Benign by pathology|Female|1959-04-30|47|MRI|2006-08-29|-7|4096881|f|f|f|t|f|f|f|f|f|f|f|f
+0567|Benign by pathology|Female|1959-04-30|47|MRI|2006-08-31|-7|4125034|t|f|f|t|f|f|f|f|f|f|f|f
+0571|Malignant|Female|1969-09-30|40|MRI|2009-08-30|-4|4902166|f|f|f|t|f|f|f|f|f|f|f|f
+0576|Benign by pathology|Female|1972-08-20|39|MRI|2011-10-25|-2|6905042|f|f|t|t|f|f|f|f|f|f|f|f
+0580|Benign by pathology|Female|1959-10-20|52|MRI|2011-09-07|-2|6855384|f|f|f|t|f|f|f|f|f|f|f|f
+0584|Malignant|Female|1956-03-11|53|MRI|2009-10-24|-4|4911917|f|f|t|t|f|f|f|f|f|f|f|f
+0584|Malignant|Female|1956-03-11|53|MRI|2009-11-10|-4|5119187|f|f|f|t|f|f|f|f|f|f|f|f
+0586|Malignant|Female|1973-09-03|37|MRI|2010-08-24|-3|5332925|f|t|f|t|f|f|f|f|f|f|f|t
+0591|Benign by pathology|Female|1976-07-20|33|MRI|2009-06-18|-4|4999968|t|f|f|f|f|f|f|f|f|f|f|f
+0592||Female|1952-11-17|55|MRI|2007-02-05|-6|4263883|t|f|f|t|f|f|f|f|f|f|f|f
+0592|Benign by pathology|Female|1952-11-17|55|MRI|2007-06-13|-6|4389875|t|f|f|t|f|f|f|f|f|f|f|f
+0595|Benign by pathology|Female|1948-11-30|65|MRI|2013-03-30|0|7441706|f|f|t|t|f|f|f|f|f|f|f|f
+0599|Benign by pathology|Female|1964-04-28|43|MRI|2007-02-23|-6|4284704|t|f|f|t|f|f|f|f|f|f|f|f
+0603|Benign by pathology|Female|1958-09-01|50|MRI|2008-03-06|-5|4593568|f|f|f|t|f|f|f|f|f|f|f|f
+0604|Malignant|Female|1960-12-01|48|MRI|2008-03-12|-5|4593492|f|f|f|t|f|f|f|f|f|f|f|f
+0608|Benign by pathology|Female|1958-07-05|52|MRI|2010-06-27|-3|5094101|f|f|f|f|f|f|f|f|f|f|f|f
+0613|Malignant|Female|1970-05-17|38|MRI|2008-07-15|-5|4681594|f|f|f|t|f|f|f|f|f|f|f|f
+0613|Malignant|Female|1970-05-17|38|MRI|2008-08-14|-5|4718085|f|f|f|t|f|f|f|f|f|f|f|f
+0619|Benign by pathology|Female|1973-05-03|34|MRI|2007-08-08|-6|4435136|t|f|f|t|f|f|f|f|f|f|f|f
+0619|Malignant|Female|1973-05-03|40|MRI|2013-04-09|0|7250777|f|f|t|t|f|f|f|f|f|f|f|f
+0635|Malignant|Female|1952-04-28|60|MRI|2012-04-03|-1|7092156|f|f|t|f|f|f|f|f|f|f|f|f
+0642|Benign by pathology|Female|1977-11-30|32|MRI|2009-05-04|-4|4928868|f|f|f|f|f|f|f|f|f|f|f|f
+0645|Benign by pathology|Female|1950-10-30|58|MRI|2008-03-14|-5|4593500|f|f|f|t|f|f|f|f|f|f|f|f
+0651|Benign by pathology|Female|1968-10-22|40|MRI|2008-09-07|-5|4695822|f|t|f|f|f|f|f|f|f|f|f|f
+0657|Malignant|Female|1962-12-06|50|MRI|2012-02-14|-1|6980780|f|f|t|f|f|f|f|f|f|f|f|f
+0663|Benign by pathology|Female|1971-07-23|37|MRI|2008-11-07|-5|4804825|f|f|f|t|f|t|f|f|f|f|f|f
+0664|Benign by pathology|Female|1969-08-15|43|MRI|2012-05-01|-1|7081071|f|f|t|t|f|f|f|f|f|f|f|f
+0665|Benign by pathology|Female|1977-09-18|32|MRI|2009-02-17|-4|4880497|f|f|f|t|f|f|f|f|f|f|f|f
+0667|Malignant|Female|1970-03-31|39|MRI|2009-01-29|-4|4864590|f|f|f|t|f|f|f|f|f|f|f|f
+0667|Malignant|Female|1970-03-31|42|MRI|2012-01-11|-1|6993980|f|f|f|t|f|f|f|f|f|f|f|f
+0668|Malignant|Female|1969-04-14|43|MRI|2012-02-09|-1|6989634|f|f|t|f|f|f|f|f|f|f|f|f
+0677|Benign by pathology|Female|1971-09-26|36|MRI|2007-10-29|-6|4464376|f|f|f|t|f|f|f|f|f|f|f|f
+0677|Benign by pathology|Female|1971-09-26|41|MRI|2012-06-02|-1|7079191|f|f|t|t|f|f|f|f|f|f|f|f
+0683|Malignant|Female|1966-07-04|44|MRI|2010-03-25|-3|5226149|t|f|f|f|f|f|f|f|f|f|f|f
+0684|Malignant|Female|1956-10-14|54|MRI|2010-07-24|-3|5266209|f|f|f|t|t|f|f|f|f|f|f|f
+0685|Benign by pathology|Female|1976-02-19|34|MRI|2010-12-14|-3|5456684|t|f|f|t|f|f|f|f|f|f|f|f
+0685||Female|1976-02-19|35|MRI|2011-07-12|-2|6700995|f|f|f|f|f|f|f|f|f|f|f|f
+0687|Malignant|Female|1952-02-25|56|MRI|2008-06-22|-5|4678937|f|f|f|f|f|f|f|f|f|f|f|f
+0690|Benign by pathology|Female|1973-11-20|38|MRI|2011-01-19|-2|6681276|f|t|f|t|f|f|f|f|f|f|f|f
+0691|Malignant|Female|1960-02-13|50|MRI|2010-01-23|-3|5178056|f|f|f|f|f|f|f|f|f|f|f|f
+0692|Benign by pathology|Female|1952-10-06|58|MRI|2010-02-11|-3|5199366|t|f|f|t|f|f|f|f|f|f|f|f
+0700|Malignant|Female|1941-02-24|67|MRI|2008-05-25|-5|4660805|f|f|f|f|f|f|t|f|f|f|f|f
+0705|Malignant|Female|1964-03-22|44|MRI|2008-05-05|-5|4648471|f|f|f|f|f|f|t|f|f|f|f|f
+0707|Benign by pathology|Female|1957-02-15|53|MRI|2010-01-30|-3|5184832|t|f|f|f|f|f|f|f|f|f|f|f
+0710|Benign by pathology|Female|1952-09-27|58|MRI|2010-05-29|-3|5282770|t|f|f|f|f|f|f|f|f|f|f|f
+0713|Malignant|Female|1964-09-10|45|MRI|2009-12-11|-4|5150291|t|f|f|f|f|f|f|f|f|f|f|f
+0714|Malignant|Female|1936-02-04|74|MRI|2010-07-09|-3|5324209|f|t|f|f|f|f|f|f|f|f|f|f
+0718|Benign by pathology|Female|1961-10-19|48|MRI|2009-06-05|-4|4962581|t|f|f|f|f|f|f|f|f|f|f|f
+0719|Malignant|Female|1960-08-02|46|MRI|2006-02-23|-7|3946608|t|f|f|f|f|f|f|f|f|f|f|f
+0720|Benign by pathology|Female|1966-12-10|43|MRI|2009-05-29|-4|4965525|t|f|f|t|f|f|f|f|f|f|f|f
+0720|Benign by pathology|Female|1966-12-10|43|MRI|2009-05-23|-4|4958334|f|f|f|t|f|f|f|f|f|f|f|f
+0722|Malignant|Female|1964-09-20|46|MRI|2010-08-24|-3|5366177|f|t|f|f|f|f|f|f|f|f|f|f
+0724|Malignant|Female|1939-07-25|70|MRI|2009-12-03|-4|5141876|f|f|f|f|f|f|f|f|f|f|t|f
+0726|Malignant|Female|1961-01-30|49|MRI|2010-06-14|-3|5304228|f|f|f|t|f|t|f|f|f|f|f|f
+0729|Benign by pathology|Female|1941-12-17|67|MRI|2008-02-21|-5|4582921|f|f|f|t|f|f|f|f|f|f|f|t
+0730|Malignant|Female|1937-12-15|72|MRI|2009-07-02|-4|5009497|f|t|f|f|f|f|f|f|f|f|f|f
+0731|Benign by pathology|Female|1950-04-25|60|MRI|2010-05-06|-3|5265417|t|f|f|f|f|f|f|f|f|f|f|f
+0732|Benign by pathology|Female|1942-04-28|67|MRI|2009-06-18|-4|4994955|f|f|f|f|f|f|f|f|f|f|t|f
+0735|Malignant|Female|1960-07-30|50|MRI|2010-05-11|-3|5276000|t|f|f|f|f|f|f|f|f|f|f|f
+0736|Benign by pathology|Female|1963-07-03|46|MRI|2009-05-19|-4|4963473|t|f|f|f|f|f|f|f|f|f|f|f
+0740|Benign by pathology|Female|1968-06-16|40|MRI|2008-12-22|-5|4842984|f|f|f|t|f|t|f|f|f|f|f|f
+0742|Benign by pathology|Female|1938-04-10|72|MRI|2010-07-23|-3|5329785|t|f|f|f|f|f|f|f|f|f|f|f
+0743|Benign by pathology|Female|1964-07-11|46|MRI|2010-08-16|-3|5229100|f|t|f|f|f|f|f|f|f|f|f|t
+0743|Malignant|Female|1964-07-11|45|MRI|2009-06-06|-4|4827839|f|f|f|t|f|f|f|f|f|f|f|f
+0744|Malignant|Female|1946-12-27|62|MRI|2008-12-20|-5|4848278|t|f|f|f|f|f|f|f|f|f|f|f
+0745|Malignant|Female|1944-02-23|65|MRI|2009-02-19|-4|4881779|t|f|f|f|f|f|f|f|f|f|f|f
+0747|Malignant|Female|1956-12-05|53|MRI|2009-11-12|-4|5118530|t|f|f|f|f|f|f|f|f|f|f|f
+0752|Benign by pathology|Female|1962-09-12|47|MRI|2009-04-13|-4|4940477|t|f|f|f|f|f|f|f|f|f|f|f
+0755|Malignant|Female|1949-01-18|60|MRI|2009-09-05|-4|5059877|f|f|f|f|f|f|f|f|f|f|f|f
+0758|Benign by pathology|Female|1958-11-09|50|MRI|2008-10-30|-5|4796378|f|f|f|t|t|f|f|f|f|f|f|f
+0760|Malignant|Female|1964-11-15|44|MRI|2008-09-07|-5|4750742|t|f|f|f|f|f|f|f|f|f|f|f
+0764|Malignant|Female|1963-07-14|46|MRI|2009-10-29|-4|5088503|f|f|f|f|f|f|f|f|f|f|f|f
+0765|Benign by pathology|Female|1953-12-27|56|MRI|2009-10-15|-4|5094113|t|f|f|f|f|f|f|f|f|f|f|f
+0776|Malignant|Female|1961-06-05|49|MRI|2010-08-16|-3|5352670|t|f|f|f|f|f|f|f|f|f|f|f
+0779|Malignant|Female|1960-06-17|49|MRI|2009-04-06|-4|4934249|f|f|f|f|f|f|t|f|f|f|f|f
+0781|Malignant|Female|1945-03-06|63|MRI|2008-09-18|-5|4738440|t|f|f|f|f|f|f|f|f|f|f|f
+0781|Malignant|Female|1945-03-06|65|MRI|2010-02-01|-3|5109839|f|f|f|f|f|f|f|f|f|f|f|f
+0782|Malignant|Female|1963-06-11|45|MRI|2008-10-04|-5|4775699|f|f|f|t|f|f|f|f|f|f|f|f
+0791|Malignant|Female|1968-04-23|42|MRI|2010-08-26|-3|5365218|f|f|f|t|t|f|f|f|f|f|f|f
+0793|Benign by pathology|Female|1965-09-08|44|MRI|2009-08-28|-4|4988020|f|f|f|f|f|f|f|f|f|f|f|f
+0794|Benign by pathology|Female|1959-05-06|47|MRI|2006-11-23|-7|4156137|t|f|f|f|f|f|f|f|f|f|f|f
+0794|Benign by pathology|Female|1959-05-06|47|MRI|2006-12-08|-7|4212401|f|t|f|f|f|f|f|f|f|f|f|f
+0794|Benign by pathology|Female|1959-05-06|49|MRI|2008-01-24|-5|4560663|t|f|f|f|f|f|f|f|f|f|f|f
+0796|Benign by pathology|Female|1947-03-16|62|MRI|2009-10-10|-4|860773|f|f|f|t|t|f|f|f|f|f|f|f
+0799|Benign by pathology|Female|1960-07-03|50|MRI|2010-09-11|-3|5372294|t|f|f|f|f|f|f|f|f|f|f|f
+0800|Benign by pathology|Female|1962-04-03|47|MRI|2009-05-29|-4|4977573|t|f|f|f|f|f|f|f|f|f|f|f
+0802|Malignant|Female|1952-04-15|56|MRI|2008-03-09|-5|4600874|f|f|f|f|f|f|f|f|f|f|t|f
+0803|Malignant|Female|1959-09-12|50|MRI|2009-08-31|-4|5058195|t|f|f|f|f|f|f|f|f|f|f|f
+0807|Malignant|Female|1951-06-09|59|MRI|2010-04-01|-3|5235491|f|f|f|f|f|f|t|f|f|f|f|f
+0812|Malignant|Female|1928-12-04|80|MRI|2008-06-30|-5|4700538|f|f|f|t|f|t|t|f|f|f|f|f
+0813|Malignant|Female|1938-01-26|72|MRI|2010-09-14|-3|5378164|t|f|f|f|f|f|f|f|f|f|f|f
+0814|Malignant|Female|1947-06-05|61|MRI|2008-08-07|-5|4704240|f|f|f|f|f|f|t|f|f|f|f|f
+0815|Malignant|Female|1960-04-03|48|MRI|2008-12-04|-5|4828432|f|f|f|f|f|f|f|f|f|f|f|f
+0827|Benign by pathology|Female|1936-11-10|73|MRI|2009-06-13|-4|4985128|t|f|f|f|f|f|f|f|f|f|f|f
+0829|Malignant|Female|1944-12-12|66|MRI|2010-05-02|-3|5264139|f|f|f|f|f|f|f|f|f|f|f|f
+0830|Malignant|Female|1948-09-11|61|MRI|2009-01-13|-4|4863868|f|f|f|f|f|f|t|f|f|f|f|f
+0834|Malignant|Female|1951-02-12|57|MRI|2008-03-27|-5|4614262|t|f|f|f|f|f|f|f|f|f|f|f
+0837|Malignant|Female|1964-12-01|44|MRI|2008-02-28|-5|4559849|f|f|f|f|f|f|f|f|f|f|f|f
+0839|Benign by pathology|Female|1968-07-27|41|MRI|2009-03-07|-4|4739257|f|f|f|t|f|f|f|f|f|f|f|f
+0840|Benign by pathology|Female|1962-02-20|46|MRI|2008-04-10|-5|4632517|f|f|f|t|f|f|f|f|f|f|f|f
+0843|Benign by pathology|Female|1967-02-12|42|MRI|2009-04-19|-4|4798594|f|f|f|t|f|f|f|f|f|f|f|f
+0844|Malignant|Female|1960-09-13|48|MRI|2008-10-27|-5|4795902|t|f|f|t|f|t|f|f|f|f|f|f
+0845|Malignant|Female|1942-05-29|68|MRI|2010-11-12|-3|5433683|f|f|f|f|f|f|f|f|f|f|f|f
+0846|Malignant|Female|1946-04-02|62|MRI|2008-11-10|-5|4800867|f|f|f|f|f|f|f|f|f|f|f|f
+0850|Benign by pathology|Female|1965-11-13|45|MRI|2010-09-23|-3|5380609|t|f|f|f|f|f|f|f|f|f|f|f
+0851|Malignant|Female|1957-06-30|53|MRI|2010-01-30|-3|4939390|f|f|f|f|f|f|f|f|f|f|f|f
+0853|Malignant|Female|1952-03-21|59|MRI|2011-03-16|-2|6696534|f|t|f|t|f|f|f|f|f|f|f|f
+0856|Benign by pathology|Female|1969-11-29|40|MRI|2009-10-18|-4|4986174|f|f|f|t|f|f|f|f|f|f|f|f
+0856|Benign by pathology|Female|1969-11-29|43|MRI|2012-01-04|-1|6871177|f|f|f|t|f|f|f|f|f|f|f|f
+0858|Benign by pathology|Female|1950-09-05|58|MRI|2008-05-29|-5|4667102|f|t|f|t|f|f|f|f|f|f|f|f
+0861|Malignant|Female|1960-05-26|49|MRI|2009-08-24|-4|5053396|t|f|f|f|f|f|f|f|f|f|f|f
+0862|Malignant|Female|1963-03-10|47|MRI|2010-10-04|-3|5395314|f|f|f|t|t|f|f|f|f|f|f|f
+0865|Malignant|Female|1964-08-31|46|MRI|2010-05-03|-3|5267535|t|f|f|f|f|f|f|f|f|f|f|f
+0867|Malignant|Female|1974-06-26|36|MRI|2010-09-07|-3|5372277|t|f|f|f|f|f|f|f|f|f|f|f
+0871|Malignant|Female|1957-08-21|52|MRI|2009-11-28|-4|5130094|f|f|f|t|t|f|f|f|f|f|f|f
+0875|Benign by pathology|Female|1950-12-21|60|MRI|2010-10-14|-3|5396107|t|f|f|f|f|f|f|f|f|f|f|f
+0876|Benign by pathology|Female|1958-07-10|50|MRI|2008-09-18|-5|4719378|f|f|f|f|f|f|f|f|f|f|f|f
+0883|Malignant|Female|1943-03-10|67|MRI|2010-01-22|-3|5177385|f|f|f|f|f|f|t|f|f|f|f|f
+0885|Benign by pathology|Female|1936-04-10|75|MRI|2011-03-31|-2|6747175|f|f|f|t|t|f|f|f|f|f|f|f
+0888|Malignant|Female|1971-08-15|40|MRI|2011-03-23|-2|6744887|t|f|f|f|f|f|f|f|f|f|f|f
+0896|Benign by pathology|Female|1973-11-01|39|MRI|2012-03-02|-1|6895982|f|t|f|f|f|f|f|f|f|f|f|t
+0896|Benign by pathology|Female|1973-11-01|40|MRI|2013-10-20|0|7624300|f|f|t|t|f|f|f|f|f|f|f|f
+0897|Benign by pathology|Female|1946-07-07|62|MRI|2008-06-06|-5|4662659|t|f|f|f|f|f|f|f|f|f|f|f
+0898|Benign by pathology|Female|1964-01-17|46|MRI|2010-11-07|-3|5224531|f|f|f|t|f|f|f|f|f|f|f|f
+0900|Benign by pathology|Female|1957-02-22|53|MRI|2010-03-26|-3|5226780|t|f|f|f|f|f|f|f|f|f|f|f
+0904|Benign by pathology|Female|1968-08-20|42|MRI|2010-02-06|-3|5191481|f|t|f|f|f|f|f|f|f|f|f|t
+0918|Benign by pathology|Female|1970-06-18|41|MRI|2011-11-19|-2|6976567|f|f|t|t|f|f|f|f|f|f|f|f
+0920|Benign by pathology|Female|1970-12-04|42|MRI|2012-06-16|-1|7095635|f|f|f|f|f|f|f|f|f|f|t|t
+0922|Benign by pathology|Female|1950-05-25|61|MRI|2011-12-03|-2|6991622|t|f|f|f|f|f|f|f|f|f|f|f
+0924|Benign by pathology|Female|1974-04-29|35|MRI|2009-04-30|-4|4831379|f|f|f|t|f|f|f|f|f|f|f|f
+0934|Benign by pathology|Female|1960-06-21|50|MRI|2010-07-24|-3|5314924|t|f|f|f|f|f|f|f|f|f|f|f
+0937|Benign by pathology|Female|1971-06-23|41|MRI|2012-09-04|-1|7144673|f|f|f|t|f|f|f|f|f|f|f|t
+0943|Malignant|Female|1961-08-07|49|MRI|2010-09-25|-3|5395204|f|f|f|t|f|f|f|f|f|f|f|f
+0944|Benign by pathology|Female|1968-01-19|44|MRI|2012-04-17|-1|7092128|f|f|t|t|f|f|f|f|f|f|f|f
+0950|Malignant|Female|1965-04-01|46|MRI|2011-10-04|-2|6931716|t|f|f|f|f|f|f|f|f|f|f|f
+0952|Benign by pathology|Female|1971-08-29|41|MRI|2012-05-06|-1|7105222|f|f|t|f|f|f|f|f|f|f|f|f
+0956|Benign by pathology|Female|1976-01-04|34|MRI|2010-02-16|-3|5062341|f|f|f|t|f|f|f|f|f|f|f|t
+0962|Benign by pathology|Female|1956-01-27|47|MRI|2003-12-16|-10|3229689|f|f|f|t|t|f|f|f|f|f|f|f
+0966|Benign by pathology|Female|1966-02-09|43|MRI|2009-10-19|-4|4914942|f|f|f|t|f|f|f|f|f|f|f|f
+0967|Malignant|Female|1961-01-30|51|MRI|2012-03-29|-1|6938015|f|f|f|f|f|f|f|f|f|f|f|t
+0975|Benign by pathology|Female|1967-05-29|44|MRI|2011-12-15|-2|7003392|f|f|t|t|f|f|f|f|f|f|f|f
+0985|Benign by pathology|Female|1964-07-10|48|MRI|2012-04-25|-1|7050619|f|f|f|f|f|f|f|f|f|f|f|t
+0993|Benign by pathology|Female|1966-10-25|46|MRI|2012-01-27|-1|6979299|f|f|t|t|f|f|f|f|f|f|f|f
+1004|Benign by pathology|Female|1972-09-19|39|MRI|2011-05-29|-2|6801264|f|f|f|t|f|f|f|f|f|f|f|f
+1006|Benign by pathology|Female|1956-12-24|51|MRI|2007-09-06|-6|4443563|f|f|f|t|f|f|f|f|f|f|f|f
+1008|Malignant|Female|1939-10-10|72|MRI|2011-03-24|-2|6745959|t|f|f|f|f|f|f|f|f|f|f|f
+1018|Benign by pathology|Female|1964-12-10|45|MRI|2009-09-17|-4|4773924|f|f|f|t|f|f|f|f|f|f|f|f
+1021|Benign by pathology|Female|1969-06-23|42|MRI|2011-08-26|-2|6760795|f|f|f|t|f|f|f|f|f|f|f|f
+1022|Benign by pathology|Female|1959-03-17|49|MRI|2008-04-04|-5|4562271|f|f|f|f|f|f|f|f|f|f|f|t
+1024|Benign by pathology|Female|1948-05-01|63|MRI|2011-11-20|-2|6980462|t|f|f|f|f|f|f|f|f|f|t|f
+1025|Benign by pathology|Female|1967-07-15|44|MRI|2011-02-11|-2|6703528|f|f|f|t|f|f|f|f|f|f|f|f
+1025|Benign by pathology|Female|1967-07-15|45|MRI|2012-03-20|-1|6925149|f|f|f|f|f|f|f|f|f|f|f|t
+1026|Benign by pathology|Female|1964-10-15|47|MRI|2011-10-26|-2|6907382|f|f|t|t|f|f|f|f|f|f|f|f
+1044|Malignant|Female|1969-01-06|44|MRI|2013-03-03|0|7366817|f|f|t|t|f|f|f|f|f|f|f|f
+1045|Benign by pathology|Female|1966-07-03|46|MRI|2012-08-18|-1|7231265|t|f|f|f|f|f|f|f|f|f|f|f
+1054|Malignant|Female|1944-11-19|68|MRI|2012-09-20|-1|7268023|t|f|f|f|f|f|f|f|f|f|f|f
+1057|Benign by pathology|Female|1950-12-01|62|MRI|2012-06-08|-1|7169269|f|f|f|t|f|t|f|f|f|f|f|f
+1059|Benign by pathology|Female|1981-01-28|32|MRI|2013-01-26|0|7346997|f|f|t|t|f|f|f|f|f|f|f|f
+1062|Benign by pathology|Female|1969-03-09|44|MRI|2013-02-19|0|7408296|t|f|f|f|f|f|f|f|f|f|f|f
+1071|Malignant|Female|1950-12-17|63|MRI|2013-01-18|0|7382882|t|f|f|f|f|f|f|f|f|f|f|f
+1074|Benign by pathology|Female|1967-04-03|45|MRI|2012-08-16|-1|7228441|f|f|t|t|f|f|f|f|f|f|f|f
+1079|Malignant|Female|1957-06-28|56|MRI|2013-02-24|0|7417880|t|f|f|f|f|f|f|f|f|f|f|f
+1081|Benign by pathology|Female|1964-06-10|48|MRI|2012-07-25|-1|7078151|f|f|t|t|f|f|f|f|f|f|f|f
+1087|Benign by pathology|Female|1948-11-08|62|MRI|2010-08-26|-3|5360576|t|f|f|f|f|f|f|f|f|f|f|f
+1095|Benign by pathology|Female|1969-02-10|38|MRI|2007-06-07|-6|4378323|f|f|f|t|f|t|f|f|f|f|f|f
+1099|Malignant|Female|1956-08-20|57|MRI|2013-10-31|0|7646705|f|f|f|t|t|f|f|f|f|f|f|f
+2003|Benign by pathology|Female|1969-01-27|42|MRI|2011-03-23|-2|6739382|f|f|f|t|f|t|f|f|f|f|f|f
+2007|Benign by pathology|Female|1975-01-23|38|MRI|2013-02-20|0|7366811|f|f|t|t|f|f|f|f|f|f|f|f
+2016|Benign by pathology|Female|1963-11-03|49|MRI|2012-02-14|-1|7052211|f|f|t|t|f|f|f|f|f|f|f|f
+2025|Malignant|Female|1967-12-03|43|MRI|2010-03-04|-3|5210614|t|f|f|f|f|f|f|f|f|f|f|f
+2049|Malignant|Female|1963-08-07|47|MRI|2010-12-09|-3|5458850|f|f|f|f|f|f|t|f|f|f|f|f
+2068|Malignant|Female|1946-01-16|67|MRI|2013-07-29|0|7559583|f|f|f|t|f|t|f|f|f|f|f|f
+2070|Benign by pathology|Female|1950-03-10|56|MRI|2006-09-19|-7|3849425|f|f|f|t|f|t|f|f|f|f|f|f
+2071|Malignant|Female|1955-06-19|58|MRI|2013-09-08|0|7594721|f|f|f|t|f|t|f|f|f|f|f|f
+2073|Malignant|Female|1958-02-12|50|MRI|2008-08-30|-5|4745825|t|f|f|f|f|f|f|f|f|f|f|f
+2075|Benign by pathology|Female|1965-01-29|46|MRI|2011-11-28|-2|6985605|t|f|f|f|f|f|t|f|f|f|f|f
+2078|Benign by pathology|Female|1957-09-06|53|MRI|2010-04-25|-3|5116776|f|f|f|t|f|t|f|f|f|f|f|t
+3000|Malignant|Female|1948-01-24|60|MRI|2008-01-04|-5|4546854|t|t|f|f|f|f|f|f|f|f|t|f
+3005|Malignant|Female|1960-01-18|52|MRI|2012-04-04|-1|6757337|t|f|f|f|f|f|f|f|f|f|f|f
+3005|Benign by pathology|Female|1960-01-18|50|MRI|2010-01-14|-3|5057668|f|f|f|f|f|f|f|f|t|f|f|f
+3020|Benign by pathology|Female|1968-09-18|45|MRI|2013-04-16|0|7395195|f|f|t|t|f|f|f|f|f|f|f|f
+3021|Benign by pathology|Female|1932-04-05|80|MRI|2012-01-07|-1|7019819|f|f|f|t|f|t|f|f|f|f|f|f
+3031|Benign by pathology|Female|1964-06-08|48|MRI|2012-04-08|-1|7106716|t|f|f|f|f|f|f|f|f|f|f|f
+3033|Benign by pathology|Female|1963-10-02|49|MRI|2012-08-07|-1|7102986|f|f|f|f|f|f|f|f|f|f|t|f
+3033|Malignant|Female|1963-10-02|46|MRI|2009-07-10|-4|5016967|f|f|f|t|f|t|f|f|f|f|f|f
+3039|Benign by pathology|Female|1955-05-04|56|MRI|2011-08-29|-2|6894870|t|f|f|t|f|t|f|f|f|f|f|f
+3039|Benign by pathology|Female|1955-05-04|50|MRI|2005-02-22|-8|3628156|t|f|f|t|f|t|f|f|f|f|f|f
+3045|Benign by pathology|Female|1961-11-23|50|MRI|2011-08-19|-2|6885313|f|f|f|t|f|t|f|f|f|f|f|f
+3046|Benign by pathology|Female|1970-11-16|43|MRI|2013-11-27|0|7682447|f|t|f|f|f|f|f|f|f|f|t|f
+3046|Benign by pathology|Female|1970-11-16|40|MRI|2010-04-13|-3|5083651|f|f|f|t|f|f|f|f|f|f|t|f
+3046|Benign by pathology|Female|1970-11-16|42|MRI|2012-12-22|-1|7289130|f|t|f|t|f|f|f|f|f|f|t|f
+3054|Benign by pathology|Female|1950-12-07|61|MRI|2011-06-18|-2|6714946|f|f|f|f|f|f|f|f|f|f|t|f
+3055|Malignant|Female|1981-12-04|31|MRI|2012-03-07|-1|7060620|f|f|t|t|f|f|f|f|f|f|f|f
+3057|Benign by pathology|Female|1967-05-26|45|MRI|2012-04-11|-1|7098623|f|f|t|t|f|f|f|f|f|f|f|f
+3065|Benign by pathology|Female|1945-05-24|67|MRI|2012-01-29|-1|7037223|t|f|f|f|f|f|f|f|f|f|f|f
+3066|Benign by pathology|Female|1961-08-25|51|MRI|2012-04-10|-1|7104690|t|f|f|f|f|f|f|f|f|f|f|f
+3070|Benign by pathology|Female|1943-05-29|69|MRI|2012-04-04|-1|7085188|f|f|f|f|f|f|t|f|f|f|f|f
+3077|Benign by pathology|Female|1962-10-03|50|MRI|2012-01-31|-1|7042083|t|f|f|f|f|f|t|f|f|f|f|f
+3078|Malignant|Female|1951-02-18|58|MRI|2009-02-14|-4|4836946|t|f|f|f|f|f|f|f|f|f|f|f
+3081|Benign by pathology|Female|1972-05-10|40|MRI|2012-01-29|-1|7041435|f|f|f|f|f|f|t|f|f|f|f|f
+3092|Benign by pathology|Female|1973-08-09|34|MRI|2007-09-17|-6|4462310|t|f|f|t|f|t|f|f|f|f|f|f
+3097|Benign by pathology|Female|1972-12-04|40|MRI|2012-01-03|-1|6909883|f|f|f|t|f|f|f|f|f|f|f|f
+4002|Benign by pathology|Female|1961-11-08|51|MRI|2012-03-14|-1|6993690|f|f|t|t|f|t|f|f|f|f|f|f
+4011|Benign by pathology|Female|1938-05-27|75|MRI|2013-01-09|0|7212409|f|f|f|t|f|t|f|f|f|f|f|f
+4012|Benign by pathology|Female|1962-06-21|50|MRI|2012-03-15|-1|7002008|f|f|t|t|f|f|f|f|f|f|f|f
+4019|Benign by pathology|Female|1990-05-17|22|MRI|2012-09-22|-1|7151338|t|f|f|f|f|f|f|f|f|f|f|t
+4023|Malignant|Female|1959-04-26|53|MRI|2012-01-27|-1|7037125|t|t|f|f|f|f|f|f|f|f|f|f
+4023|Benign by pathology|Female|1959-04-26|53|MRI|2012-08-21|-1|7152678|f|f|f|t|f|t|f|f|f|f|f|f
+4025|Malignant|Female|1961-08-28|51|MRI|2012-01-17|-1|7029301|f|f|f|t|f|t|f|f|f|f|f|f
+4041|Benign by pathology|Female|1978-12-04|33|MRI|2011-12-20|-2|7003893|t|f|f|t|f|f|f|f|f|f|f|f
+4044|Benign by pathology|Female|1970-11-21|42|MRI|2012-02-26|-1|7066571|t|f|f|f|f|f|f|f|f|f|f|f
+4045|Benign by pathology|Female|1981-05-20|31|MRI|2012-03-30|-1|7092118|f|f|t|t|f|f|f|f|f|f|f|f
+4052|Benign by pathology|Female|1967-10-18|45|MRI|2012-09-04|-1|7249199|t|f|f|f|f|f|f|f|f|f|f|f
+4064|Malignant|Female|1974-05-22|39|MRI|2013-03-16|0|7408178|f|f|t|t|f|f|f|f|f|f|f|f
+4069|Malignant|Female|1959-09-30|54|MRI|2013-01-25|0|7389797|t|f|f|t|f|t|f|f|f|f|f|f
+4072|Benign by pathology|Female|1966-12-21|46|MRI|2012-02-21|-1|7010797|f|f|t|t|f|f|f|f|f|f|f|f
+4082|Benign by pathology|Female|1963-11-18|46|MRI|2009-11-24|-4|4812191|f|f|f|t|f|f|f|f|f|f|f|f
+4090|Benign by pathology|Female|1957-07-23|55|MRI|2012-07-27|-1|7214609|f|f|f|f|f|f|t|f|f|f|f|f
+4092|Benign by pathology|Female|1981-07-25|32|MRI|2013-07-06|0|7446757|f|f|t|t|f|f|f|f|f|f|f|f
+4095|Benign by pathology|Female|1943-06-12|70|MRI|2013-08-11|0|7567574|t|f|f|f|f|f|t|f|f|f|f|f
+4097|Benign by pathology|Female|1982-08-12|31|MRI|2013-01-09|0|7312908|f|f|f|t|f|f|f|f|f|f|f|f
+5001|Malignant|Female|1975-05-06|38|MRI|2013-03-13|0|7434795|t|f|f|f|f|f|f|f|f|f|f|f
+5002|Malignant|Female|1963-10-06|47|MRI|2010-11-18|-3|5377263|f|t|f|f|f|f|f|f|f|f|f|f
+5004|Benign by pathology|Female|1976-04-15|36|MRI|2012-07-06|-1|7190587|f|f|f|t|f|f|f|f|f|f|f|f
+5007|Benign by pathology|Female|1964-08-28|49|MRI|2013-09-10|0|7506001|f|f|f|f|f|f|f|f|f|f|f|t
+5007|Benign by pathology|Female|1964-08-28|48|MRI|2012-08-28|-1|7232274|f|f|t|t|f|f|f|f|f|f|f|f
+5012|Benign by pathology|Female|1960-09-27|52|MRI|2012-02-18|-1|7059575|t|f|f|f|f|f|f|f|f|f|f|f
+5029|Benign by pathology|Female|1967-02-24|46|MRI|2013-03-24|0|7447740|f|f|t|t|f|f|f|f|f|f|f|f
+5037|Benign by pathology|Female|1979-05-22|34|MRI|2013-01-13|0|7369059|f|f|t|t|f|f|f|f|f|f|f|f
+5039|Benign by pathology|Female|1953-06-04|59|MRI|2012-07-13|-1|7202972|t|f|f|f|f|f|t|f|f|f|f|f
+5043|Benign by pathology|Female|1965-05-20|47|MRI|2012-09-23|-1|7269175|t|f|f|f|f|f|t|f|f|f|f|f
+5044|Benign by pathology|Female|1966-12-13|46|MRI|2012-05-15|-1|7128247|f|f|t|t|f|f|f|f|f|f|f|f
+5046|Malignant|Female|1964-10-03|49|MRI|2013-01-17|0|7379441|t|f|f|f|f|f|f|f|f|f|f|f
+5049|Benign by pathology|Female|1952-03-07|61|MRI|2013-02-12|0|7403080|t|f|f|f|f|f|f|f|f|f|f|f
+5050|Benign by pathology|Female|1969-02-23|43|MRI|2012-08-21|-1|7232267|f|f|f|t|f|f|f|f|f|f|f|f
+5051|Benign by pathology|Female|1954-05-25|59|MRI|2013-02-05|0|7397042|f|f|f|f|f|f|f|f|f|f|t|f
+5063|Benign by pathology|Female|1951-11-29|62|MRI|2013-03-27|0|7362883|t|f|f|f|f|f|t|f|f|f|f|f
+5068|Benign by pathology|Female|1953-06-10|60|MRI|2013-08-24|0|7580053|t|f|f|f|f|f|f|f|f|f|f|f
+5077|Benign by pathology|Female|1971-09-28|42|MRI|2013-04-06|0|7452833|t|f|f|f|f|f|f|f|f|f|f|f
+5097|Benign by pathology|Female|1972-09-01|41|MRI|2013-03-05|0|7344755|f|f|f|f|f|f|f|f|f|f|f|f
+5097|Benign by pathology|Female|1972-09-01|40|MRI|2012-08-23|-1|7201998|f|f|t|t|f|f|f|f|f|f|f|f
+6005|Malignant|Female|1964-04-01|45|MRI|2009-09-08|-4|ACC108250|f|f|f|t|f|t|t|f|f|f|f|f
+6018|Malignant|Female|1933-11-17|76|MRI|2009-10-06|-4|5088825|f|f|f|f|f|f|f|f|f|f|f|f
+6024|Malignant|Female|1967-12-28|42|MRI|2009-06-30|-4|5008021|t|f|f|f|f|f|f|f|f|f|f|f
+6026|Malignant|Female|1957-12-09|52|MRI|2009-02-24|-4|4888386|f|f|f|t|f|t|t|f|f|f|f|f
+6030|Malignant|Female|1957-12-15|52|MRI|2009-12-07|-4|5144407|f|f|f|t|f|t|t|f|f|f|f|f
+6033|Malignant|Female|1970-03-04|39|MRI|2009-06-13|-4|4983726|t|f|f|f|f|f|f|f|f|f|f|f
+6035|Malignant|Female|1967-04-18|42|MRI|2009-09-05|-4|5062962|t|f|f|f|f|f|f|f|f|f|f|f
+6037|Malignant|Female|1963-02-04|46|MRI|2009-08-13|-4|5043444|f|f|f|t|f|t|f|t|f|f|f|f
+6039|Malignant|Female|1964-12-21|45|MRI|2009-09-29|-4|ACC109197|f|f|f|f|f|f|t|f|f|f|f|f
+6040|Malignant|Female|1955-06-30|54|MRI|2009-09-21|-4|5075204|f|f|f|f|f|f|f|f|f|f|f|f
+6042|Malignant|Female|1971-03-07|37|MRI|2008-10-13|-5|4764440|t|f|f|t|f|f|f|f|f|f|f|f
+6043|Benign by pathology|Female|1971-10-30|39|MRI|2010-04-17|-3|5249778|f|f|f|t|f|t|f|f|f|f|f|f
+6044|Malignant|Female|1970-05-23|39|MRI|2009-09-25|-4|5078981|f|f|f|f|f|f|t|f|f|f|f|f
+6046|Malignant|Female|1973-05-08|37|MRI|2010-03-01|-3|ACC108189|f|f|f|f|f|f|f|f|f|f|f|f
+6053|Benign by pathology|Female|1952-01-30|58|MRI|2010-10-22|-3|5387311|t|f|f|f|f|f|f|f|f|f|f|f
+6068|Malignant|Female|1942-03-01|69|MRI|2011-02-15|-2|6694453|t|f|f|f|f|f|f|f|f|f|f|f
+6069|Benign by pathology|Female|1970-12-19|41|MRI|2011-02-17|-2|6711818|t|f|f|f|f|f|f|f|f|f|f|f
+6069|Benign by pathology|Female|1970-12-19|43|MRI|2013-10-29|0|7581124|t|f|f|f|f|f|f|f|f|f|f|f
+6071|Benign by pathology|Female|1965-09-04|46|MRI|2011-03-15|-2|6704150|t|f|f|f|f|f|f|f|f|f|f|f
+6071|Benign by pathology|Female|1965-09-04|46|MRI|2011-02-07|-2|6704150|f|f|f|f|f|f|t|f|f|f|f|f
+6072|Malignant|Female|1948-08-20|63|MRI|2011-02-17|-2|6716378|t|f|f|f|f|f|f|f|f|f|f|f
+6073|Malignant|Female|1962-04-25|49|MRI|2011-03-14|-2|6726019|t|f|f|f|f|f|f|f|f|f|f|f
+6076|Benign by pathology|Female|1964-09-18|47|MRI|2011-03-26|-2|6710364|f|f|f|t|f|f|f|f|f|f|f|f
+6079|Benign by pathology|Female|1957-09-05|54|MRI|2011-05-17|-2|6797177|t|f|f|f|f|f|f|f|f|f|f|f
+6084|Benign by pathology|Female|1933-02-11|78|MRI|2011-04-13|-2|6730406|t|f|f|f|f|f|f|f|f|f|f|f
+6087|Benign by pathology|Female|1968-11-06|43|MRI|2011-05-04|-2|6774639|t|f|f|f|f|f|f|f|f|f|f|f
+6087|Benign by pathology|Female|1968-11-06|43|MRI|2011-05-04|-2|6774639|f|f|f|f|f|f|f|f|f|f|f|f
+6090|Benign by pathology|Female|1967-12-23|44|MRI|2011-04-26|-2|6768025|t|f|f|f|f|f|f|f|f|f|f|f
+6093|Benign by pathology|Female|1977-06-23|34|MRI|2011-05-22|-2|6667353|f|f|f|t|f|t|f|f|f|f|f|f
+6094|Benign by pathology|Female|1960-11-28|51|MRI|2011-05-14|-2|6797254|t|f|f|f|f|f|f|f|f|f|f|f
+6095|Benign by pathology|Female|1968-04-24|45|MRI|2013-06-04|0|7511435|f|f|f|f|f|f|f|f|f|f|f|f
+6095|Benign by pathology|Female|1968-04-24|44|MRI|2012-10-16|-1|7229066|f|f|f|t|f|f|f|f|f|f|f|f
+6095|Benign by pathology|Female|1968-04-24|44|MRI|2012-04-23|-1|7026651|f|f|f|t|f|f|f|f|f|f|f|t
+6096|Benign by pathology|Female|1952-12-08|58|MRI|2010-08-20|-3|5199363|f|t|f|f|f|f|f|f|f|f|f|f
+6100|Malignant|Female|1942-07-12|69|MRI|2011-03-07|-2|6722170|t|f|f|f|f|f|f|f|f|f|f|f
+6101|Benign by pathology|Female|1948-07-26|61|MRI|2009-10-26|-4|5087078|f|f|f|f|f|f|f|f|f|f|f|t
+6102|Benign by pathology|Female|1951-12-29|62|MRI|2013-05-15|0|7379437|f|t|f|f|f|f|f|f|f|f|f|f
+6103|Benign by pathology|Female|1968-03-25|44|MRI|2012-10-26|-1|7171822|f|f|f|t|t|f|f|f|f|f|f|f
+6105|Malignant|Female|1950-02-02|59|MRI|2009-09-12|-4|5069712|f|f|f|f|f|f|t|f|f|f|f|f
+6110|Malignant|Female|1944-02-21|67|MRI|2011-06-11|-2|6807036|t|f|f|f|f|f|f|f|f|f|f|f
+6116|Malignant|Female|1962-05-14|46|MRI|2008-04-25|-5|4633712|t|f|f|f|f|f|f|f|f|f|f|f
+6129|Benign by pathology|Female|1952-06-07|58|MRI|2010-09-30|-3|5337971|f|f|f|t|f|f|f|f|f|f|f|f
+6129|Benign by pathology|Female|1952-06-07|60|MRI|2012-08-28|-1|7164404|f|f|t|t|f|f|f|f|f|f|f|f
+6132|Benign by pathology|Female|1953-12-14|58|MRI|2011-03-06|-2|6676130|t|f|f|f|f|f|f|f|f|f|f|f
+6139|Benign by pathology|Female|1973-10-03|37|MRI|2010-08-28|-3|5361764|t|f|f|f|f|f|f|f|f|f|f|f
+6140|Malignant|Female|1955-07-14|56|MRI|2011-03-04|-2|6724284|t|f|f|f|f|f|f|f|f|f|f|f
+6145|Malignant|Female|1935-10-29|76|MRI|2011-02-02|-2|6692432|t|f|f|f|f|f|f|f|f|f|f|f
+6148|Malignant|Female|1944-01-28|60|MRI|2004-10-05|-9|3512706|t|f|f|f|f|f|f|f|f|f|f|f
+6148|Benign by pathology|Female|1944-01-28|69|MRI|2013-05-25|0|7446343|f|t|f|f|f|f|f|f|f|f|f|f
+6150|Benign by pathology|Female|1961-05-31|51|MRI|2012-05-08|-1|7128025|f|f|f|t|f|f|f|f|f|f|f|f
+6165|Benign by pathology|Female|1959-07-03|51|MRI|2010-09-28|-3|5383248|f|f|f|f|f|f|f|f|t|f|f|f
+6174|Benign by pathology|Female|1949-01-07|61|MRI|2010-10-02|-3|5345420|f|f|f|t|f|f|f|f|f|f|f|f
+6180|Benign by pathology|Female|1961-10-31|47|MRI|2008-09-27|-5|4766881|t|f|f|f|f|f|f|f|f|f|f|f
+6183|Benign by pathology|Female|1965-12-23|43|MRI|2008-05-18|-5|4654479|t|f|f|t|f|t|f|f|f|f|f|f
+6183|Benign by pathology|Female|1965-12-23|45|MRI|2010-02-22|-3|5180444|f|t|f|f|f|f|f|f|f|f|f|f
+6184|Benign by pathology|Female|1957-06-15|50|MRI|2007-05-31|-6|4376301|f|f|f|t|t|f|f|t|f|f|f|f
+6202|Malignant|Female|1955-07-20|52|MRI|2007-04-30|-6|4343467|f|f|f|f|f|f|t|f|f|f|f|f
+6207|Malignant|Female|1976-09-25|32|MRI|2008-06-07|-5|4426934|f|f|f|t|f|f|f|f|f|f|f|f
+6209|Benign by pathology|Female|1950-08-10|60|MRI|2010-07-29|-3|5205910|f|t|f|t|f|t|f|f|f|f|f|t
+6211|Benign by pathology|Female|1968-06-24|40|MRI|2008-06-19|-5|4632498|f|t|f|f|f|f|f|f|f|f|f|f
+6214|Benign by pathology|Female|1970-04-28|40|MRI|2010-09-02|-3|5235805|f|f|f|t|f|f|f|f|f|f|f|f
+6215|Malignant|Female|1955-08-23|56|MRI|2011-04-23|-2|6771763|t|f|f|f|f|f|f|f|f|f|f|f
+6217|Benign by pathology|Female|1936-12-17|75|MRI|2011-01-11|-2|5359321|f|t|f|f|f|f|f|f|f|f|f|f
+6217|Benign by pathology|Female|1936-12-17|75|MRI|2011-05-19|-2|6794662|f|t|f|f|f|f|f|f|f|f|f|f
+6217|Benign by pathology|Female|1936-12-17|71|MRI|2007-08-02|-6|4412966|f|f|f|t|f|t|f|f|f|f|t|f
+6218|Benign by pathology|Female|2009-12-25|0|MRI|2009-09-26|-4|4722292|f|f|f|t|f|f|f|f|f|f|f|f
+6219|Benign by pathology|Female|1965-09-08|44|MRI|2009-06-06|-4|4724329|f|f|f|t|f|f|f|f|f|f|f|f
+6236|Malignant|Female|1961-06-03|50|MRI|2011-12-30|-2|7014549|f|f|f|f|f|f|t|f|f|f|f|f
+6244|Benign by pathology|Female|1970-03-20|42|MRI|2012-11-26|-1|7331668|f|f|f|f|f|f|t|f|f|f|f|f
+6248|Malignant|Female|1961-04-30|44|MRI|2005-11-25|-8|3875402|f|f|f|f|f|f|t|f|f|f|f|f
+6256|Malignant|Female|1980-11-03|33|MRI|2013-11-21|0|1117915|t|f|f|f|f|f|f|f|f|f|f|f
+6342|Malignant|Female|1970-09-13|43|MRI|2013-07-21|0|7556870|t|f|f|f|f|f|f|f|f|f|f|f
+7002|Malignant|Female|1964-04-17|47|MRI|2011-03-16|-2|6736013|t|f|f|f|f|f|f|f|f|f|f|f
+7003|Benign by pathology|Female|1954-12-01|57|MRI|2011-03-12|-2|6737062|t|f|f|f|f|f|f|f|f|f|f|f
+7018|Malignant|Female|1956-11-07|55|MRI|2011-05-24|-2|6803089|t|f|f|f|f|f|f|f|f|f|f|f
+7024|Benign by pathology|Female|1982-10-26|29|MRI|2011-05-31|-2|6805356|t|f|f|f|f|f|f|f|f|f|f|f
+7025|Benign by pathology|Female|1961-09-03|48|MRI|2009-12-15|-4|4868451|f|t|f|t|f|f|f|f|f|f|f|f
+7029|Benign by pathology|Female|1968-01-26|41|MRI|2009-10-15|-4|4948660|f|t|f|t|f|f|f|f|f|f|f|f
+7030|Benign by pathology|Female|1969-11-17|44|MRI|2013-08-07|0|7538617|f|f|t|f|f|f|f|f|f|f|f|f
+7033|Malignant|Female|1955-04-24|56|MRI|2011-02-15|-2|6710816|t|f|f|f|f|f|f|f|f|f|f|f
+7043|Benign by pathology|Female|1965-01-27|48|MRI|2013-02-02|0|7119983|f|f|f|t|f|f|f|f|f|f|f|f
+7053|Benign by pathology|Female|1971-07-28|40|MRI|2011-09-06|-2|6817558|f|t|f|t|f|f|f|f|f|f|f|f
+7063|Malignant|Female|1942-05-01|68|MRI|2010-04-12|-3|5238036|t|f|f|f|f|f|f|f|f|f|f|f
+7066|Benign by pathology|Female|1974-01-29|39|MRI|2013-02-12|0|7395276|f|f|f|t|f|f|f|f|f|f|f|f
+7068|Malignant|Female|1951-09-03|61|MRI|2012-05-05|-1|6989578|f|t|f|t|f|f|f|f|f|f|f|f
+7074|Benign by pathology|Female|1979-10-20|34|MRI|2013-12-10|0|7563613|f|f|f|t|f|f|f|f|f|f|f|f
+7076|Malignant|Female|1963-05-23|50|MRI|2013-04-27|0|7267446|f|f|t|t|f|f|f|f|f|f|f|f
+7077|Malignant|Female|1946-12-28|63|MRI|2009-09-24|-4|5077480|f|f|f|t|f|t|f|f|f|f|f|f
+7086|Malignant|Female|1964-04-24|48|MRI|2012-01-26|-1|6938067|f|f|f|t|f|f|f|f|f|f|f|f
+7087|Benign by pathology|Female|1978-06-04|32|MRI|2010-05-03|-3|5242304|f|f|f|t|f|f|f|f|f|f|f|f
+7097|Benign by pathology|Female|1972-04-06|39|MRI|2011-06-24|-2|6805449|f|f|f|t|f|f|f|f|f|f|f|f
+7104|Malignant|Female|1969-05-31|42|MRI|2011-10-25|-2|6941351|t|f|f|f|f|f|f|f|f|f|f|f
+7110|Benign by pathology|Female|1958-02-12|53|MRI|2011-01-12|-2|6667647|t|f|f|f|f|f|f|f|f|f|f|f
+7127|Benign by pathology|Female|1976-01-02|36|MRI|2012-01-28|-1|6989740|f|t|f|t|f|f|f|f|f|f|f|f
+7159|Malignant|Female|1957-02-07|53|MRI|2010-11-11|-3|5435020|f|f|f|f|f|f|t|f|f|f|f|f
+7160|Benign by pathology|Female|1974-08-02|37|MRI|2011-06-07|-2|6818749|t|f|f|f|f|f|f|f|f|f|f|f
+7161|Benign by pathology|Female|1963-10-08|47|MRI|2010-11-09|-3|5421192|f|f|f|f|f|f|t|f|f|f|f|f
+7162|Benign by pathology|Female|1968-03-13|44|MRI|2012-04-12|-1|6825661|f|f|f|f|f|f|f|f|f|f|f|t
+7169|Malignant|Female|1979-03-12|28|MRI|2007-02-16|-6|4280178|t|f|f|f|f|f|f|f|f|f|f|f
+7172|Malignant|Female|1950-06-12|61|MRI|2011-05-04|-2|6769267|f|t|f|f|f|f|f|f|f|f|f|f
+7173|Benign by pathology|Female|1954-11-11|55|MRI|2009-12-15|-4|5151766|t|f|f|f|f|f|f|f|f|f|f|f
+7173|Benign by pathology|Female|1954-11-11|55|MRI|2009-12-15|-4|5151766|f|f|f|f|f|f|f|f|f|f|f|f
+7184|Malignant|Female|1965-05-01|48|MRI|2013-04-05|0|7420191|f|t|f|f|f|f|f|f|f|f|f|f
+7189|Benign by pathology|Female|1976-01-14|36|MRI|2012-02-28|-1|7068978|t|f|f|f|f|f|f|f|f|f|f|f
+7193|Benign by pathology|Female|1963-09-15|50|MRI|2013-03-09|0|7347138|f|f|f|f|f|f|f|f|f|f|f|t
+7201|Benign by pathology|Female|1973-07-25|36|MRI|2009-08-11|-4|5041620|t|f|f|f|f|f|f|f|f|f|f|f
+7220|Benign by pathology|Female|1974-06-21|39|MRI|2013-01-11|0|7288789|f|f|f|t|f|f|f|f|f|f|f|f
